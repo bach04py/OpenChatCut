@@ -387,3 +387,107 @@ All six operations were executed with `occ tools call … --apply` (one offline 
   - Effect and transition **display names are mostly Chinese** (e.g. `builtin:fx-glitch` = "故障闪烁"); template names are English.
   - Plugin-pack templates and runtime custom fx (`submit_shader`) are **not** included. They live in the user's pack store / session and are not part of the bundled registries.
 - **Git note:** `.gitignore:89` ignores `/scripts/*` except allowlisted files, so `scripts/dump-catalogue.mts` does **not** show in `git status`. To keep it, either `git add -f scripts/dump-catalogue.mts` or add `!/scripts/dump-catalogue.mts` to `.gitignore`. I left `.gitignore` untouched.
+
+
+---
+
+# M2 (2026-11-16): Vietnamese diacritics and offline fonts
+
+Test string: **"Đức Ủy Ở Hoàng Gia Nguyễn"**, typed into every `text`/`string` prop of a template. Everything was rendered with the app's own Remotion serve bundle at full template resolution. No existing source file was changed. Added: `scripts/vi-font-check.mts` and `vi-font-review.json`. `scripts/dump-catalogue.mts` now merges the review.
+
+## V1. Do the diacritics render? Spot checks (title-cards + social-shorts)
+
+From the full run below, looked at frame by frame:
+
+| Template | Group | Result |
+|---|---|---|
+| Breaking News Title Card | title-cards | correct (Inter caps, every accent intact) |
+| Location Title Card | title-cards | correct (mono face) |
+| News Broadcast Title Card | title-cards | correct (serif) |
+| Name Tag Title Card | title-cards | glyphs correct; headline truncated "ĐỨC ỦY Ở HOÀNG …" (length) |
+| Event Opener Screen | title-cards | **fail**: tight line-height makes accents collide with the line above ("GIẠ", "NGỤYỄN") |
+| Dial Chapter Card | title-cards | correct (references Georgia, but the face actually used covers Vietnamese) |
+| 竖屏 social-shorts #211, #217, #219, #222 | social-shorts | correct (all 15 social-shorts pass) |
+
+- **No tofu boxes anywhere. No accents stripped anywhere:** the Vietnamese render differed from the accent-free render in every rendered template, measured programmatically.
+- The real failure modes are:
+  - (a) **accent collision / clipping** in tight-leading display layouts,
+  - (b) **glyph fallback**, where the template's font lacks Vietnamese and Chromium substitutes another font for ứ Ủ Ở ễ,
+  - (c) plain **length overflow**.
+
+## V2. Where the Google Fonts request happens, and how to vendor Inter
+
+**Request path during render:**
+1. `src/editor/TimelineReadinessGate.tsx:51` calls `loadTimelineFonts(state)` (`src/fonts/projectFonts.ts:100`).
+2. That collects families from motion-graphic props and code (`projectFonts.ts:6-42`; a regex on `fontFamily:` in template code).
+3. It then calls `ensureFont(family)` (`src/fonts/googleFonts.ts:66`). That goes to local fonts first (`:70`, `findLocalFont` → `ensureLocalFont`), otherwise `loadGoogleFace` (`:77`).
+4. For Inter: `src/fonts/googleFonts.ts:38` → `(await import('@remotion/google-fonts/Inter')).loadFont()`.
+   - With **no arguments**, this loads every weight (100–900) × normal/italic × every subset. That produces the 63/126 `fonts.gstatic.com` requests seen in render logs.
+   - The log's `src/captions/segmenterData.ts:56` location is a source-map artefact; that file contains no font code.
+   - The URLs are hard-coded in `node_modules/@remotion/google-fonts/dist/esm/Inter.mjs` (`getInfo().fonts[style][weight][subset]`).
+
+**Can Inter be vendored? Yes, and there is an exact in-repo precedent: Noto Sans SC**, done in commit `1e6c7b05`. The change would involve:
+1. **Font files:** add `assets/fonts/inter/`.
+   - Copy the `@fontsource-variable/inter` 5.x (OFL-1.1) variable WOFF2 shards into `files/`, plus an `inter.css` with one `@font-face` per shard (`font-weight: 100 900`, `unicode-range` per subset, both `normal` and `italic`).
+   - Also add the OFL license text and `SHA256SUMS`, and a row in `assets/fonts/LICENSES.md`.
+   - The package is ~1.9 MB unpacked across all subsets. Shipping only latin, latin-ext and vietnamese would be roughly 10% of that (estimate, not measured).
+2. **Registry:** in `src/fonts/localFonts.ts` (`LOCAL_CJK_FONTS`, `:38-72`), add `{ family: 'Inter', importName: 'Inter', aliasZh: [], stylesheet: '/fonts/inter/inter.css', weightRange: [100, 900] }`.
+   - Because `ensureFont` checks `findLocalFont` before Google (`googleFonts.ts:70`), every Inter load then goes to disk.
+   - The `/fonts/...` URL already works in both the Vite app and the Remotion serve bundle: `remotion/serve-bundle.mjs` copies `assets/` to the serve root.
+3. **Catalogue:** remove Inter from `GOOGLE_FONT_CATALOG` (`src/fonts/googleFontCatalog.ts:29`), so `FONT_CATALOG` doesn't list it twice. Bundled fonts get `source:'bundled'` automatically (`:51-59`).
+   - Remove the dead `case 'Inter'` at `googleFonts.ts:38`.
+   - Optionally rename `LOCAL_CJK_FONTS`, since it would no longer be CJK-only.
+4. **Test:** add a verify modelled on `src/fonts/notoSansOffline.verify.ts`. It serves `assets/fonts/inter/` from a local HTTP server, opens Remotion's headless Chrome with network access to Google blocked, renders "Đức Ủy Ở Hoàng Gia Nguyễn" in Inter, and asserts the face loaded. Register it in a `verify:*` script.
+
+**Limits:**
+- Inter alone does not make *all* template renders offline. Templates also pull Playfair Display (28), Montserrat (9), Roboto (8), DM Sans (5), Oswald (4), Anton, Space Mono (3 each), Caveat (2), Fredoka, Nunito and Special Elite (1 each) from Google. Fully offline rendering means vendoring those 11 families the same way. Inter covers 69 of the 235 templates.
+- Vendoring does not fix Vietnamese for **DM Sans, Caveat, Fredoka and Special Elite**: Google ships no Vietnamese subset for them. Those templates need a substitute family, e.g. a Vietnamese-capable alternative chosen per template.
+
+## V3. All 235 templates
+
+- **Method.** `npx tsx scripts/vi-font-check.mts --out <dir> --concurrency 3`; the full run took **401 s**.
+  - Per template, one transparent full-resolution frame is rendered with text set to a zero-width space (`ZW`), the Vietnamese string, and the accent-free string. The frame is chosen at 60%/45%/80%/30%/95% of duration until text is visible.
+  - Programmatic metrics:
+    - text pixels: Vietnamese vs ZW,
+    - accent presence: Vietnamese vs accent-free,
+    - text bbox touching the frame edge (overflow), for both strings,
+    - a static font check: families referenced vs Vietnamese coverage. Coverage was verified with `@remotion/google-fonts` `getInfo().subsets` and the cmap of `C:\Windows\Fonts\*.ttf`: Georgia, Impact and Comic Sans lack ứ Ủ Ở ễ; Arial, Times and Segoe UI have them.
+  - Then **every rendered template was reviewed visually** from contact sheets of the text-band crops (31 sheets). Ambiguous cases were re-checked on full frames or zoomed crops.
+  - Programmatic flags I overruled: 8 edge flags were false positives (text-sized background art), and the bbox-top "accent clip" heuristic was dropped as unreliable.
+- **Output.**
+  - `vi-font-review.json` (repo root): per template `id`, `vi_ok`, `vi_status`, `vi_issues[{issue, note}]`, `vi_warnings`, metrics and fonts.
+  - `scripts/dump-catalogue.mts` merges `vi_ok` / `vi_status` / `vi_issues` / `vi_warnings` into every template in `catalogue.json`. All 235 have them; `counts.templateViOk = 136`.
+
+### Result: **136 of 235 templates are usable with Vietnamese text** (`vi_ok: true`)
+
+| Outcome | Count | Meaning |
+|---|---|---|
+| ok | **136** | text renders correctly, fits, accents intact |
+| fail_vietnamese | **24** | a Vietnamese-specific defect (would not happen in English) |
+| fail_length | **35** | glyphs fine, but the 25-character string is too long for the field (truncated, "…", clipped, overlapping, off-frame); shorter Vietnamese text would likely work |
+| no_text_field | **30** | the template has no editable text prop; text is hard-coded in its code |
+| text_props_ignored | **10** | declares text props, but the code ignores them (default and Vietnamese renders are pixel-identical): Checklist Tick Animation, Fruit Shopping Tips, Shopping Tips Animation, Search Interface Simulator, Golden Chapter Card, Neon Title Card, Red Passion Chapter Card, Skewed Chapter Label, Data visualization animation, Pie chart animation |
+
+- Glyphs render correctly (ignoring length) in **171 of the 195** templates where text is visible.
+
+**Vietnamese-specific failures (24):**
+
+| Issue | Templates | Count |
+|---|---|---|
+| `accent_collision` (line-height too tight, accents land in the line above) | Event Opener Screen; Bold Typography (HQ); Bold Typography Impact; Colorful Inspiration; eCommerce Business; Minimal Gradient Chapter Title / Company Introduction / Data Chart; Retro Decode; Tech Trends Chapter Title; Timeline Company Milestones | 11 |
+| `glyph_fallback` (font lacks Vietnamese, mixed glyphs) | Hand-Drawn List Overlay and Steps for Studying (Caveat); Cartoon Style (Fredoka); Digital Revolution (Special Elite); MindSpace Kinetic Title Reveal (Impact); MindSpace Number Counter and Quote Card (DM Sans); Vibe Effects Title Card | 8 |
+| `accent_clipped` (stacked tilde or hook above cut by a mask or container) | Bar Chart Weekly Growth Rate, Line Chart Sales Trend ("Nguyễn" → "Nguyên"); Editorial Lower Third Card; Tech Trends Company Introduction (Ở→Ơ, NGUYỄN→NGUYÊN) | 4 |
+| `text_overflow_vi_only` | Black Friday | 1 |
+
+Some templates carry more than one issue: 5 of the Vietnamese failures also overflow.
+
+**Per group (vi_ok / total):**
+- social-shorts 15/15 and koubo-scenes 9/9: every Chinese-market template passes. Their system serif fallback, Times New Roman on Windows, covers Vietnamese.
+- quote-cards 5/5
+- data-visualization 19/35, infographics 6/12, lower-thirds 5/10, social-media 2/3, social-ui 0/1, talking-head-overlays 4/8, text-effects 2/8, title-cards 11/27, uncategorized 58/102.
+
+**Caveats:**
+- **One frame per template.** An animation that clips accents only at other times would be missed. Typewriter and word-reveal templates were judged on their partial state.
+- **The length failures depend on my test string.** I put the same 25-character string into every text field, including short labels such as chart legends.
+- **Platform-specific.** Results are for a **Windows** render machine. Templates that rely on system fonts (`Georgia`, `Impact`, `Lora`, `system-ui`, generic `serif`) will render differently on Linux or macOS.
+- **The pass/fail calls come from my visual review, and some are judgement calls.** Subtle Georgia/DM Sans substitutions that looked consistent are recorded as `vi_warnings`, not failures.

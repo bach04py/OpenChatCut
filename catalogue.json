@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T01:25:06.856Z",
+  "generatedAt": "2026-11-16T02:02:58.021Z",
   "sources": {
     "effects": "src/gl/fx/shaderEffects.ts (FX_EFFECTS)",
     "luts": "src/gl/fx/lutEffects.ts (LUT_EFFECTS)",
@@ -19,7 +19,9 @@
     "transition": 16,
     "template": 235,
     "total": 300,
-    "duplicateAssetIds": []
+    "duplicateAssetIds": [],
+    "templateViOk": 136,
+    "templateViReviewed": 235
   },
   "items": [
     {
@@ -3221,7 +3223,15 @@
       "fps": 30,
       "durationInFrames": 90,
       "tags": [],
-      "params": []
+      "params": [],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
+        }
+      ]
     },
     {
       "id": "452d340f-f4f4-4747-bec6-018cf639d10e",
@@ -3417,7 +3427,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "847102e7-ec7f-4c4c-ad8a-f015f5b31fc7",
@@ -3503,7 +3516,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "a7b5e885-25ae-4970-9d5e-d451e9d8da7a",
@@ -3679,7 +3695,10 @@
           "step": 1,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "1c49b2f1-3dce-4953-afd1-674ae0a285e8",
@@ -3775,7 +3794,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "d03ead86-a81b-4638-98d3-2fae21c1715b",
@@ -3881,7 +3903,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "c63df7ef-fc63-491b-ae4b-30a34d88d8ae",
@@ -3987,7 +4012,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "9e4ffbcc-ec05-4a3b-b54f-0ffe7f571efd",
@@ -4193,7 +4221,10 @@
           "step": 1,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "6e2cda87-034d-4a76-8fd5-1f0bea0d6b00",
@@ -4368,6 +4399,14 @@
           "max": null,
           "step": 1,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_vietnamese",
+      "vi_issues": [
+        {
+          "issue": "accent_clipped",
+          "note": "stacked tilde on ễ cut off by a per-line mask: renders \"Nguyên\""
         }
       ]
     },
@@ -4605,7 +4644,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "d82c1bd4-4654-4f92-809d-32eba00a88f0",
@@ -4841,7 +4883,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "7ef378f4-bbee-4529-8e79-30d5591e3017",
@@ -4856,7 +4901,15 @@
       "fps": 30,
       "durationInFrames": 90,
       "tags": [],
-      "params": []
+      "params": [],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
+        }
+      ]
     },
     {
       "id": "9b186c75-5a70-429d-bcfb-a09805172ef9",
@@ -5052,7 +5105,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "5e015143-44fa-4cc4-bb04-f692e011a1ee",
@@ -5237,6 +5293,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
       ]
     },
@@ -5474,7 +5538,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "38bd86e5-2f30-46f7-ade8-1a9711220f0d",
@@ -5489,7 +5556,15 @@
       "fps": 30,
       "durationInFrames": 90,
       "tags": [],
-      "params": []
+      "params": [],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
+        }
+      ]
     },
     {
       "id": "6cdf1268-c279-4c5d-a540-3f59501fbe0d",
@@ -5504,7 +5579,15 @@
       "fps": 30,
       "durationInFrames": 90,
       "tags": [],
-      "params": []
+      "params": [],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
+        }
+      ]
     },
     {
       "id": "145263b5-d513-4612-80fd-db56effa77f8",
@@ -5519,7 +5602,15 @@
       "fps": 30,
       "durationInFrames": 90,
       "tags": [],
-      "params": []
+      "params": [],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
+        }
+      ]
     },
     {
       "id": "1a4cd0c3-ba36-4457-8428-49e57c61292f",
@@ -5534,7 +5625,15 @@
       "fps": 30,
       "durationInFrames": 90,
       "tags": [],
-      "params": []
+      "params": [],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
+        }
+      ]
     },
     {
       "id": "6d14754c-1e8a-4920-85ff-953203b42afe",
@@ -5610,7 +5709,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "74444c9b-b846-496e-a5d9-e8e1c5887b95",
@@ -5625,7 +5727,15 @@
       "fps": 30,
       "durationInFrames": 90,
       "tags": [],
-      "params": []
+      "params": [],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
+        }
+      ]
     },
     {
       "id": "798fa1a8-771d-4c97-b900-8a9004266304",
@@ -5720,6 +5830,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
       ]
     },
@@ -5827,6 +5945,14 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_vietnamese",
+      "vi_issues": [
+        {
+          "issue": "accent_clipped",
+          "note": "stacked tilde on ễ cut off by a per-line mask: renders \"Nguyên\""
+        }
       ]
     },
     {
@@ -5903,7 +6029,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "c206d9e8-7cc6-428f-a030-65f5758641a5",
@@ -5918,7 +6047,15 @@
       "fps": 30,
       "durationInFrames": 90,
       "tags": [],
-      "params": []
+      "params": [],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
+        }
+      ]
     },
     {
       "id": "0371e3ac-0449-4e8d-a5df-c758ccdbba44",
@@ -6064,7 +6201,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "26c175c6-f05d-4370-913a-c63b15b05314",
@@ -6079,7 +6219,15 @@
       "fps": 30,
       "durationInFrames": 90,
       "tags": [],
-      "params": []
+      "params": [],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
+        }
+      ]
     },
     {
       "id": "0273f371-8c99-4d7f-b51e-096edd9d2188",
@@ -6245,7 +6393,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "82a91144-3342-4599-8fc0-a0b02f5d3933",
@@ -6341,7 +6492,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "97d3b441-1916-48bc-a11c-9af4ff6fb0be",
@@ -6477,7 +6631,10 @@
           "step": 1,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "a456f6df-9683-4ff9-b4be-d80208b92d16",
@@ -6492,7 +6649,15 @@
       "fps": 30,
       "durationInFrames": 90,
       "tags": [],
-      "params": []
+      "params": [],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
+        }
+      ]
     },
     {
       "id": "f9b5adcd-fc88-4f3b-b4f2-c74befe1317e",
@@ -6748,7 +6913,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "86b95e5b-18d1-4074-9dbc-22229237a8ee",
@@ -6838,7 +7006,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "53dd0f34-fa25-4999-b317-5122f11d258c",
@@ -6929,6 +7100,14 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "numeric counter field: text renders as \"…NaN\" and overflows"
+        }
       ]
     },
     {
@@ -6944,7 +7123,15 @@
       "fps": 30,
       "durationInFrames": 90,
       "tags": [],
-      "params": []
+      "params": [],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
+        }
+      ]
     },
     {
       "id": "b0e7ccf7-d84c-4baf-aca4-678d3ad4b11e",
@@ -7009,6 +7196,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
       ]
     },
@@ -7130,6 +7325,14 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "text_props_ignored",
+      "vi_issues": [
+        {
+          "issue": "text_props_ignored",
+          "note": "declared text props have no effect: default and Vietnamese renders are identical (hard-coded text)"
+        }
       ]
     },
     {
@@ -7215,6 +7418,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "text_props_ignored",
+      "vi_issues": [
+        {
+          "issue": "text_props_ignored",
+          "note": "declared text props have no effect: default and Vietnamese renders are identical (hard-coded text)"
         }
       ]
     },
@@ -7442,7 +7653,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "05ae4e10-0bf7-4611-bd7e-135b9e2c8ee9",
@@ -7508,7 +7722,10 @@
           "step": 1,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "ccbf5be2-d5a7-45f5-835a-016ad845cc33",
@@ -7604,7 +7821,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "9d11fc67-dc78-4d78-b797-f0d76c816858",
@@ -7730,7 +7950,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "8f195239-642e-44fa-aa03-7de513e56ab4",
@@ -7825,6 +8048,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
       ]
     },
@@ -7987,6 +8218,14 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "text_props_ignored",
+      "vi_issues": [
+        {
+          "issue": "text_props_ignored",
+          "note": "declared text props have no effect: default and Vietnamese renders are identical (hard-coded text)"
+        }
       ]
     },
     {
@@ -8073,6 +8312,14 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
+        }
       ]
     },
     {
@@ -8149,7 +8396,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "7c8eb54a-f237-4334-b6ba-c55421c3d35a",
@@ -8235,7 +8485,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "10d5638b-dc0f-4362-8cf8-f6bb14340331",
@@ -8317,7 +8570,10 @@
           "step": 1,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "b6ed6fcb-f11c-4209-8f45-9217ccb9d03c",
@@ -8408,6 +8664,12 @@
           "step": 10,
           "editable": true
         }
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": [],
+      "vi_warnings": [
+        "references Georgia (no Vietnamese glyphs); rendered text looked consistent"
       ]
     },
     {
@@ -8487,6 +8749,14 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_vietnamese",
+      "vi_issues": [
+        {
+          "issue": "accent_clipped",
+          "note": "accents of first line cut by container top; lines collide"
+        }
       ]
     },
     {
@@ -8553,7 +8823,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "b820ad1e-f2e5-4a49-93de-28add26db506",
@@ -8631,7 +8904,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "8963b40a-b5b0-4076-8831-e1e227a9a777",
@@ -8717,6 +8993,14 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
+        }
       ]
     },
     {
@@ -8732,7 +9016,15 @@
       "fps": 30,
       "durationInFrames": 90,
       "tags": [],
-      "params": []
+      "params": [],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
+        }
+      ]
     },
     {
       "id": "5a14be9d-3155-4519-b2c3-0974ee1e7006",
@@ -8747,7 +9039,15 @@
       "fps": 30,
       "durationInFrames": 90,
       "tags": [],
-      "params": []
+      "params": [],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
+        }
+      ]
     },
     {
       "id": "1b06459e-b43f-4a46-9e0f-dd3f67202373",
@@ -8833,7 +9133,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "a2abdfc4-c794-4224-b89a-07c0f4009129",
@@ -8918,6 +9221,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
       ]
     },
@@ -9027,7 +9338,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "ef4231df-8e0a-43b8-9dfc-76bac9c1eeb9",
@@ -9093,7 +9407,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "7fa3108f-346f-42ba-b707-b15e8282fe6e",
@@ -9169,7 +9486,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "893c85e4-940f-4cbc-b0fc-2db3a2f48392",
@@ -9265,7 +9585,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "bf565cad-9797-470c-909a-e91e5f5ba0a8",
@@ -9421,7 +9744,10 @@
             }
           ]
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "8aedc1d6-c5c8-44f0-9f3d-9ed78fd55f69",
@@ -9489,6 +9815,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
         }
       ]
     },
@@ -9629,7 +9963,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "4de08f53-df3a-47ed-bd45-e541386b27fa",
@@ -9808,7 +10145,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "7f1570f1-c211-4143-b15d-76849729d786",
@@ -9853,6 +10193,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "text_props_ignored",
+      "vi_issues": [
+        {
+          "issue": "text_props_ignored",
+          "note": "declared text props have no effect: default and Vietnamese renders are identical (hard-coded text)"
         }
       ]
     },
@@ -9940,7 +10288,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "3515f6e1-019d-408d-9396-59cdea42abb1",
@@ -10026,7 +10377,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "4792b7a4-126f-48ac-9a0c-7dfcd9a2891b",
@@ -10112,7 +10466,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "2e4c55aa-3c66-49b9-9b24-bd85d03e58a4",
@@ -10197,6 +10554,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
       ]
     },
@@ -10284,7 +10649,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "fb80f5e4-170e-4cd0-a9da-e59829d9e8d5",
@@ -10369,6 +10737,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
       ]
     },
@@ -10465,6 +10841,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
       ]
     },
@@ -10602,6 +10986,14 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
+        }
       ]
     },
     {
@@ -10617,7 +11009,15 @@
       "fps": 30,
       "durationInFrames": 90,
       "tags": [],
-      "params": []
+      "params": [],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
+        }
+      ]
     },
     {
       "id": "6d5ae7e6-e458-40ef-8633-383bfc0e8279",
@@ -10697,7 +11097,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "935cd0e3-39a1-4b7d-bc0e-90145cc98cd2",
@@ -10878,7 +11281,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "3554d937-05c5-4ffb-835d-aa8db1a48ace",
@@ -11038,6 +11444,14 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_vietnamese",
+      "vi_issues": [
+        {
+          "issue": "glyph_fallback",
+          "note": "Caveat has no Vietnamese subset: ứ Ủ Ở ễ drawn in a fallback serif"
+        }
       ]
     },
     {
@@ -11134,6 +11548,14 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
+        }
       ]
     },
     {
@@ -11149,7 +11571,15 @@
       "fps": 30,
       "durationInFrames": 90,
       "tags": [],
-      "params": []
+      "params": [],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
+        }
+      ]
     },
     {
       "id": "30ff329c-f4cc-49cf-afae-8c98299039f5",
@@ -11168,7 +11598,15 @@
         "short-form",
         "talking-head"
       ],
-      "params": []
+      "params": [],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
+        }
+      ]
     },
     {
       "id": "f11ec59a-6c28-4b03-8dae-e9e98516547d",
@@ -11248,6 +11686,14 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_vietnamese",
+      "vi_issues": [
+        {
+          "issue": "glyph_fallback",
+          "note": "display face lacks Vietnamese: Ứ Ủ Ở Ễ in a different font, gap in \"NGUYỄ N\""
+        }
       ]
     },
     {
@@ -11324,7 +11770,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "1bdbddfd-60bc-4fb3-ab57-c8a6427777ae",
@@ -11339,7 +11788,15 @@
       "fps": 30,
       "durationInFrames": 90,
       "tags": [],
-      "params": []
+      "params": [],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
+        }
+      ]
     },
     {
       "id": "659cd252-7419-45d5-bbf1-3f6253f12811",
@@ -11354,7 +11811,15 @@
       "fps": 30,
       "durationInFrames": 90,
       "tags": [],
-      "params": []
+      "params": [],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
+        }
+      ]
     },
     {
       "id": "afe39099-fba4-4b59-ad48-31a2bf55bc61",
@@ -11369,7 +11834,15 @@
       "fps": 30,
       "durationInFrames": 90,
       "tags": [],
-      "params": []
+      "params": [],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
+        }
+      ]
     },
     {
       "id": "2995a5a5-7240-4c9a-8528-c167b8dce239",
@@ -11465,7 +11938,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "7c576ae9-ee31-4727-ad3b-b71891bc3e21",
@@ -11480,7 +11956,15 @@
       "fps": 30,
       "durationInFrames": 90,
       "tags": [],
-      "params": []
+      "params": [],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
+        }
+      ]
     },
     {
       "id": "347681ff-bc76-452c-814b-4e82d4e5d255",
@@ -11495,7 +11979,15 @@
       "fps": 30,
       "durationInFrames": 90,
       "tags": [],
-      "params": []
+      "params": [],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
+        }
+      ]
     },
     {
       "id": "9d2bedfe-7840-4bfa-80d4-7e27074071bc",
@@ -11601,7 +12093,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "47caa17c-0e24-4447-b549-766163e8efe0",
@@ -11697,7 +12192,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "c8675840-2115-4060-be44-0d6be2fc8827",
@@ -11813,6 +12311,12 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": [],
+      "vi_warnings": [
+        "references Georgia (no Vietnamese glyphs); rendered text looked consistent"
       ]
     },
     {
@@ -11909,7 +12413,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "dfda4ffe-ab11-4da3-94e7-963a41d79fb4",
@@ -12005,7 +12512,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "8a36f4ee-a5b8-435e-bfad-bd8e91820c9e",
@@ -12090,6 +12600,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_vietnamese",
+      "vi_issues": [
+        {
+          "issue": "accent_collision",
+          "note": "line-height too tight: accents of one line land in the line above (false dots/tildes, e.g. \"GIẠ\", \"ĐỤC\")"
         }
       ]
     },
@@ -12211,6 +12729,14 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
+        }
       ]
     },
     {
@@ -12276,6 +12802,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "text_props_ignored",
+      "vi_issues": [
+        {
+          "issue": "text_props_ignored",
+          "note": "declared text props have no effect: default and Vietnamese renders are identical (hard-coded text)"
         }
       ]
     },
@@ -12363,7 +12897,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "c987c3d3-e85b-40cf-adca-44ca22b6215a",
@@ -12378,7 +12915,15 @@
       "fps": 30,
       "durationInFrames": 90,
       "tags": [],
-      "params": []
+      "params": [],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
+        }
+      ]
     },
     {
       "id": "ea1d0a33-02a9-4d9e-ae44-99a4e133561c",
@@ -12393,7 +12938,15 @@
       "fps": 30,
       "durationInFrames": 90,
       "tags": [],
-      "params": []
+      "params": [],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
+        }
+      ]
     },
     {
       "id": "14209866-efb6-4b54-bead-d8927d9bdf75",
@@ -12479,6 +13032,14 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
+        }
       ]
     },
     {
@@ -12555,6 +13116,14 @@
           "step": 1,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "text_props_ignored",
+      "vi_issues": [
+        {
+          "issue": "text_props_ignored",
+          "note": "declared text props have no effect: default and Vietnamese renders are identical (hard-coded text)"
+        }
       ]
     },
     {
@@ -12621,7 +13190,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "2063446e-f68f-4284-ae99-aefd13bd4824",
@@ -12718,6 +13290,14 @@
           "max": 3,
           "step": 0.1,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
       ]
     },
@@ -12828,7 +13408,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "d466a3cb-a87f-4bf1-9da2-a074d9c4ef6f",
@@ -12883,6 +13466,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "text_props_ignored",
+      "vi_issues": [
+        {
+          "issue": "text_props_ignored",
+          "note": "declared text props have no effect: default and Vietnamese renders are identical (hard-coded text)"
         }
       ]
     },
@@ -12960,7 +13551,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "62cceb8b-a33f-45b0-a5ff-2a2be3fe2107",
@@ -13025,6 +13619,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "text_props_ignored",
+      "vi_issues": [
+        {
+          "issue": "text_props_ignored",
+          "note": "declared text props have no effect: default and Vietnamese renders are identical (hard-coded text)"
         }
       ]
     },
@@ -13122,6 +13724,17 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
+        }
+      ],
+      "vi_warnings": [
+        "references Georgia (no Vietnamese glyphs); rendered text looked consistent"
       ]
     },
     {
@@ -13398,6 +14011,14 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
+        }
       ]
     },
     {
@@ -13604,7 +14225,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "33e13fa9-76d1-4483-94dc-e3f1217c0f1f",
@@ -13820,7 +14444,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "7d205758-dac2-4df5-9735-7ad781d792af",
@@ -13906,7 +14533,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "82876903-b57c-44dd-95cf-e5482749b399",
@@ -14081,6 +14711,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
       ]
     },
@@ -14338,6 +14976,14 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_vietnamese",
+      "vi_issues": [
+        {
+          "issue": "text_overflow_vi_only",
+          "note": "only the Vietnamese render reaches the frame edge (extra accent height)"
+        }
       ]
     },
     {
@@ -14573,6 +15219,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_vietnamese",
+      "vi_issues": [
+        {
+          "issue": "accent_collision",
+          "note": "line-height too tight: accents of one line land in the line above (false dots/tildes, e.g. \"GIẠ\", \"ĐỤC\")"
         }
       ]
     },
@@ -14880,6 +15534,14 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
+        }
       ]
     },
     {
@@ -15115,6 +15777,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_vietnamese",
+      "vi_issues": [
+        {
+          "issue": "accent_collision",
+          "note": "line-height too tight: accents of one line land in the line above (false dots/tildes, e.g. \"GIẠ\", \"ĐỤC\")"
         }
       ]
     },
@@ -15372,6 +16042,14 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_vietnamese",
+      "vi_issues": [
+        {
+          "issue": "glyph_fallback",
+          "note": "Fredoka has no Vietnamese subset: Ủ Ở Ễ in a lighter fallback face"
+        }
       ]
     },
     {
@@ -15588,6 +16266,14 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
+        }
       ]
     },
     {
@@ -15684,7 +16370,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "243aa8dd-9cd9-41ac-8972-05d2e505f036",
@@ -15789,6 +16478,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
       ]
     },
@@ -15896,7 +16593,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "388494bf-f1c7-4031-add5-0bb27c2f0b4a",
@@ -16122,6 +16822,14 @@
           "step": 1,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_vietnamese",
+      "vi_issues": [
+        {
+          "issue": "accent_collision",
+          "note": "line-height too tight: accents of one line land in the line above (false dots/tildes, e.g. \"GIẠ\", \"ĐỤC\")"
+        }
       ]
     },
     {
@@ -16238,7 +16946,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "6cb35207-77ab-4538-8b60-9fe32f493460",
@@ -16374,7 +17085,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "29c9bddc-0e29-4665-bc2a-bf966aeaac6b",
@@ -16480,7 +17194,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "d8ed2e4b-8b7e-4b4d-8942-7ac0c4b7800a",
@@ -16696,6 +17413,14 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
+        }
       ]
     },
     {
@@ -16882,7 +17607,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "3cc81aaa-2429-4be0-acc1-5e39dd946836",
@@ -17058,7 +17786,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "207da43b-d3e8-4f05-81b9-25fbe97c50f4",
@@ -17153,6 +17884,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
         }
       ]
     },
@@ -17250,6 +17989,14 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
+        }
       ]
     },
     {
@@ -17326,6 +18073,13 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": [],
+      "vi_warnings": [
+        "references Impact (no Vietnamese glyphs); rendered text looked consistent",
+        "font(s) not bundled or Google-loaded, depend on render machine: Impact"
       ]
     },
     {
@@ -17411,6 +18165,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
       ]
     },
@@ -17818,7 +18580,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "f4ed16bb-209c-4f61-89ea-4eb6a6909163",
@@ -17893,6 +18658,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
       ]
     },
@@ -17989,6 +18762,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
       ]
     },
@@ -18136,7 +18917,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "dd96bb2f-ec3c-466b-84b6-23c5735339b7",
@@ -18332,7 +19116,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "6fba5c4c-4003-41c3-b1ea-3482b1214293",
@@ -18437,6 +19224,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "text_props_ignored",
+      "vi_issues": [
+        {
+          "issue": "text_props_ignored",
+          "note": "declared text props have no effect: default and Vietnamese renders are identical (hard-coded text)"
         }
       ]
     },
@@ -18663,6 +19458,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_vietnamese",
+      "vi_issues": [
+        {
+          "issue": "glyph_fallback",
+          "note": "Special Elite has no Vietnamese subset: Ủ Ở in a clean serif amid typewriter glyphs"
         }
       ]
     },
@@ -18920,6 +19723,14 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_vietnamese",
+      "vi_issues": [
+        {
+          "issue": "accent_collision",
+          "note": "line-height too tight: accents of one line land in the line above (false dots/tildes, e.g. \"GIẠ\", \"ĐỤC\")"
+        }
       ]
     },
     {
@@ -19096,7 +19907,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "82cf935e-d02a-496b-bad3-12a3876328a9",
@@ -19111,7 +19925,15 @@
       "fps": 30,
       "durationInFrames": 90,
       "tags": [],
-      "params": []
+      "params": [],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
+        }
+      ]
     },
     {
       "id": "a9f9348f-eb15-4064-b5d8-f164dd82cb9b",
@@ -19217,7 +20039,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "2c38ab81-0d44-485f-9981-a3e36ef785b6",
@@ -19313,7 +20138,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "77c25412-0768-4c6f-a56d-3d78b5481ff0",
@@ -19419,7 +20247,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "1b401c0b-0bd3-47e0-a64f-93f470e2fb6c",
@@ -19575,7 +20406,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "4a1c2bc0-9798-4ef4-bbf9-0517cc5ca787",
@@ -19721,7 +20555,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "4444d0ce-ac02-4831-ad25-dd90b6aea350",
@@ -19877,7 +20714,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "3ce620cb-4199-45cc-984a-6cefe31727c2",
@@ -19973,6 +20813,14 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
+        }
       ]
     },
     {
@@ -20049,7 +20897,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "751adbfe-0a1d-4d9d-97d5-21d050c75442",
@@ -20104,6 +20955,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
       ]
     },
@@ -20201,7 +21060,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "ec5bfc1f-7826-40ad-9657-46b33ab730e6",
@@ -20317,7 +21179,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "9be0ad20-a161-485b-854f-2695a8710123",
@@ -20393,6 +21258,17 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
+        }
+      ],
+      "vi_warnings": [
+        "references Georgia (no Vietnamese glyphs); rendered text looked consistent"
       ]
     },
     {
@@ -20499,7 +21375,10 @@
           "step": 0.05,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "9c22e1ef-0735-46a9-9e63-c4f276aa6592",
@@ -20575,6 +21454,12 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": [],
+      "vi_warnings": [
+        "auto edge flag was a false positive (background art touches frame)"
       ]
     },
     {
@@ -20651,6 +21536,12 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": [],
+      "vi_warnings": [
+        "auto edge flag was a false positive (background art touches frame)"
       ]
     },
     {
@@ -20727,6 +21618,12 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": [],
+      "vi_warnings": [
+        "auto edge flag was a false positive (background art touches frame)"
       ]
     },
     {
@@ -20803,6 +21700,12 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": [],
+      "vi_warnings": [
+        "auto edge flag was a false positive (background art touches frame)"
       ]
     },
     {
@@ -20879,6 +21782,12 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": [],
+      "vi_warnings": [
+        "auto edge flag was a false positive (background art touches frame)"
       ]
     },
     {
@@ -20975,6 +21884,14 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
+        }
       ]
     },
     {
@@ -21031,6 +21948,21 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_vietnamese",
+      "vi_issues": [
+        {
+          "issue": "glyph_fallback",
+          "note": "Impact (Windows) lacks ứ Ủ Ở ễ: round fallback glyphs in condensed word"
+        },
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
+        }
+      ],
+      "vi_warnings": [
+        "font(s) not bundled or Google-loaded, depend on render machine: Impact"
       ]
     },
     {
@@ -21127,6 +22059,18 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_vietnamese",
+      "vi_issues": [
+        {
+          "issue": "glyph_fallback",
+          "note": "DM Sans has no Vietnamese subset: serif Ủ Ở inside sans text"
+        },
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
+        }
       ]
     },
     {
@@ -21192,6 +22136,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_vietnamese",
+      "vi_issues": [
+        {
+          "issue": "glyph_fallback",
+          "note": "DM Sans has no Vietnamese subset: serif Ủ Ở inside sans text"
         }
       ]
     },
@@ -21299,6 +22251,12 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": [],
+      "vi_warnings": [
+        "references DM Sans (no Vietnamese glyphs); rendered text looked consistent"
       ]
     },
     {
@@ -21425,6 +22383,12 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": [],
+      "vi_warnings": [
+        "references DM Sans (no Vietnamese glyphs); rendered text looked consistent"
       ]
     },
     {
@@ -21511,6 +22475,17 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
+        }
+      ],
+      "vi_warnings": [
+        "references DM Sans (no Vietnamese glyphs); rendered text looked consistent"
       ]
     },
     {
@@ -21717,7 +22692,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "5a3d3074-e947-454c-be17-61763d195186",
@@ -21822,6 +22800,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_vietnamese",
+      "vi_issues": [
+        {
+          "issue": "accent_collision",
+          "note": "line-height too tight: accents of one line land in the line above (false dots/tildes, e.g. \"GIẠ\", \"ĐỤC\")"
         }
       ]
     },
@@ -21939,6 +22925,14 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_vietnamese",
+      "vi_issues": [
+        {
+          "issue": "accent_collision",
+          "note": "line-height too tight: accents of one line land in the line above (false dots/tildes, e.g. \"GIẠ\", \"ĐỤC\")"
+        }
       ]
     },
     {
@@ -22054,6 +23048,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_vietnamese",
+      "vi_issues": [
+        {
+          "issue": "accent_collision",
+          "note": "line-height too tight: accents of one line land in the line above (false dots/tildes, e.g. \"GIẠ\", \"ĐỤC\")"
         }
       ]
     },
@@ -22241,7 +23243,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "75dae426-6c04-4ffd-9de5-9a4c5959d87c",
@@ -22427,7 +23432,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "f767f837-0255-49c4-8f17-01a168f1f7a3",
@@ -22543,6 +23551,14 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
+        }
       ]
     },
     {
@@ -22619,7 +23635,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "34151422-9674-4a31-a2a7-ade3932e0aef",
@@ -22745,7 +23764,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "fc1c2614-8907-4dd4-b0ea-0ef7f272a3e0",
@@ -22851,7 +23873,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "847b9656-7989-42c6-ab6a-87a8efe0a20a",
@@ -22987,6 +24012,12 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": [],
+      "vi_warnings": [
+        "references Georgia (no Vietnamese glyphs); rendered text looked consistent"
       ]
     },
     {
@@ -23073,6 +24104,12 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": [],
+      "vi_warnings": [
+        "auto edge flag was a false positive (background art touches frame)"
       ]
     },
     {
@@ -23389,6 +24426,14 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
+        }
       ]
     },
     {
@@ -23464,6 +24509,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "text_props_ignored",
+      "vi_issues": [
+        {
+          "issue": "text_props_ignored",
+          "note": "declared text props have no effect: default and Vietnamese renders are identical (hard-coded text)"
         }
       ]
     },
@@ -23561,6 +24614,12 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": [],
+      "vi_warnings": [
+        "references Georgia (no Vietnamese glyphs); rendered text looked consistent"
       ]
     },
     {
@@ -23677,6 +24736,12 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": [],
+      "vi_warnings": [
+        "references Georgia (no Vietnamese glyphs); rendered text looked consistent"
       ]
     },
     {
@@ -23783,7 +24848,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "0f42b597-2b83-4e6c-9a7b-19f9b0b0ef98",
@@ -23979,6 +25047,12 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": [],
+      "vi_warnings": [
+        "font(s) not bundled or Google-loaded, depend on render machine: Lora"
       ]
     },
     {
@@ -24085,6 +25159,12 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": [],
+      "vi_warnings": [
+        "font(s) not bundled or Google-loaded, depend on render machine: Lora"
       ]
     },
     {
@@ -24271,6 +25351,12 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": [],
+      "vi_warnings": [
+        "font(s) not bundled or Google-loaded, depend on render machine: Lora"
       ]
     },
     {
@@ -24357,6 +25443,12 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": [],
+      "vi_warnings": [
+        "font(s) not bundled or Google-loaded, depend on render machine: Lora"
       ]
     },
     {
@@ -24433,6 +25525,12 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": [],
+      "vi_warnings": [
+        "font(s) not bundled or Google-loaded, depend on render machine: Lora"
       ]
     },
     {
@@ -24508,6 +25606,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
         }
       ]
     },
@@ -24635,7 +25741,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "a6e86e59-c544-4ee5-8c49-e8bfed68712b",
@@ -24911,6 +26020,18 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_vietnamese",
+      "vi_issues": [
+        {
+          "issue": "accent_collision",
+          "note": "line-height too tight: accents of one line land in the line above (false dots/tildes, e.g. \"GIẠ\", \"ĐỤC\")"
+        },
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
+        }
       ]
     },
     {
@@ -24996,6 +26117,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "numeric counter field: text renders as \"…NaN\" and overflows"
         }
       ]
     },
@@ -25253,6 +26382,14 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_vietnamese",
+      "vi_issues": [
+        {
+          "issue": "glyph_fallback",
+          "note": "Caveat has no Vietnamese subset: ứ Ủ Ở ễ drawn in a fallback serif"
+        }
       ]
     },
     {
@@ -25308,6 +26445,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
       ]
     },
@@ -25395,7 +26540,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "76002b44-e277-4db9-80ca-a5c9e0cb15f3",
@@ -25561,7 +26709,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "1afea496-4002-4a6e-9a22-2e8da948f086",
@@ -25676,6 +26827,18 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_vietnamese",
+      "vi_issues": [
+        {
+          "issue": "accent_collision",
+          "note": "line-height too tight: accents of one line land in the line above (false dots/tildes, e.g. \"GIẠ\", \"ĐỤC\")"
+        },
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
       ]
     },
@@ -25792,6 +26955,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_vietnamese",
+      "vi_issues": [
+        {
+          "issue": "accent_clipped",
+          "note": "thin caps: hook above and stacked tilde clipped (Ở→Ơ, NGUYỄN→NGUYÊN)"
         }
       ]
     },
@@ -25969,7 +27140,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "5957f338-1913-4571-8f5d-07304f691bec",
@@ -26145,7 +27319,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "6ce4db2a-66d0-4c28-b869-6227800d8fa9",
@@ -26351,7 +27528,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "ca1b1b60-d036-4dfb-a02c-1b511a45a27f",
@@ -26446,6 +27626,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "no_text_field",
+      "vi_issues": [
+        {
+          "issue": "no_editable_text_field",
+          "note": "propSchema has no text/string prop; text is baked into template code"
         }
       ]
     },
@@ -26603,6 +27791,18 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_vietnamese",
+      "vi_issues": [
+        {
+          "issue": "accent_collision",
+          "note": "line-height too tight: accents of one line land in the line above (false dots/tildes, e.g. \"GIẠ\", \"ĐỤC\")"
+        },
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
+        }
       ]
     },
     {
@@ -26698,6 +27898,14 @@
           "max": null,
           "step": null,
           "editable": true
+        }
+      ],
+      "vi_ok": false,
+      "vi_status": "fail_length",
+      "vi_issues": [
+        {
+          "issue": "text_overflow",
+          "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
       ]
     },
@@ -26795,7 +28003,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "58b32a8f-8d9e-4521-85d6-277dfb37fd68",
@@ -26891,7 +28102,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "988db173-b9f1-484e-bbed-9e33c238ff4a",
@@ -26967,7 +28181,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "4103210c-e3ee-4589-8626-307036bc61a3",
@@ -27343,7 +28560,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "ss-keyword-pop",
@@ -27415,7 +28635,10 @@
           "step": 2,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "ss-big-caption",
@@ -27487,7 +28710,10 @@
           "step": 1,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "ss-quote-card",
@@ -27559,7 +28785,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "ss-name-bar",
@@ -27631,7 +28860,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "ss-cta-follow",
@@ -27703,7 +28935,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "ss-step-list",
@@ -27795,7 +29030,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "ss-big-number",
@@ -27867,7 +29105,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "ss-chapter",
@@ -27949,7 +29190,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "ss-price-tag",
@@ -28021,7 +29265,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "ss-cover-title",
@@ -28083,7 +29330,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "ss-checklist",
@@ -28165,7 +29415,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "ss-before-after",
@@ -28257,7 +29510,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "ss-note-sticker",
@@ -28329,7 +29585,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "ss-social-actions",
@@ -28401,7 +29660,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "ss-episode-badge",
@@ -28473,7 +29735,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "kb-beige-grid",
@@ -28577,7 +29842,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "kb-latte-lines",
@@ -28671,7 +29939,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "kb-chalkboard",
@@ -28755,7 +30026,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "kb-collage-split",
@@ -28831,7 +30105,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "kb-parchment",
@@ -28915,7 +30192,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "kb-split-note",
@@ -28971,7 +30251,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "kb-split-dots",
@@ -29037,7 +30320,10 @@
           "step": null,
           "editable": true
         }
-      ]
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": []
     },
     {
       "id": "kb-kraft-corner",
@@ -29111,6 +30397,12 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": [],
+      "vi_warnings": [
+        "auto edge flag was a false positive (background art touches frame)"
       ]
     },
     {
@@ -29167,6 +30459,12 @@
           "step": null,
           "editable": true
         }
+      ],
+      "vi_ok": true,
+      "vi_status": "ok",
+      "vi_issues": [],
+      "vi_warnings": [
+        "auto edge flag was a false positive (background art touches frame)"
       ]
     }
   ]

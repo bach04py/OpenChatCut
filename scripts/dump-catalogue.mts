@@ -169,13 +169,38 @@ function templateItems(): CatalogueItem[] {
   return items;
 }
 
+// Vietnamese diacritics verdicts (vi-font-review.json, produced from
+// scripts/vi-font-check.mts renders + visual review) are merged onto templates.
+interface ViReview { id: string; vi_ok: boolean; vi_status: string; vi_issues: unknown[]; vi_warnings?: string[] }
+const VI_REVIEW_PATH = join(ROOT, 'vi-font-review.json');
+const viReview = new Map<string, ViReview>();
+try {
+  for (const entry of (JSON.parse(readFileSync(VI_REVIEW_PATH, 'utf8')) as { templates: ViReview[] }).templates) {
+    viReview.set(entry.id, entry);
+  }
+} catch {
+  // No review file yet: templates are emitted without vi_* fields.
+}
+
+function withViReview(item: CatalogueItem): CatalogueItem {
+  const review = viReview.get(item.id);
+  if (!review) return item;
+  return {
+    ...item,
+    vi_ok: review.vi_ok,
+    vi_status: review.vi_status,
+    vi_issues: review.vi_issues,
+    ...(review.vi_warnings ? { vi_warnings: review.vi_warnings } : {}),
+  };
+}
+
 const effects = ordered(FX_EFFECTS, FX_ORDER).map((def) => fxItem(def, 'effect'));
 const luts = ordered(LUT_EFFECTS, LUT_ORDER).map((def) => fxItem(def, 'lut'));
 const known = new Set([...Object.keys(FX_EFFECTS), ...Object.keys(LUT_EFFECTS)]);
 // ALL_FX = FX_EFFECTS + LUT_EFFECTS + anything registered at runtime (empty here).
 const custom = Object.values(ALL_FX).filter((def) => !known.has(def.id)).map((def) => fxItem(def, 'custom-effect'));
 const transitions = transitionItems();
-const templates = templateItems();
+const templates = templateItems().map(withViReview);
 const items = [...effects, ...luts, ...custom, ...transitions, ...templates];
 
 const ids = new Set<string>();
@@ -199,6 +224,8 @@ const catalogue = {
     template: templates.length,
     total: items.length,
     duplicateAssetIds: duplicates.map((item) => item.assetId),
+    templateViOk: templates.filter((item) => item.vi_ok === true).length,
+    templateViReviewed: templates.filter((item) => typeof item.vi_ok === 'boolean').length,
   },
   items,
 };
