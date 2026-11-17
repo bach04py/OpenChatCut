@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-16T02:02:58.021Z",
+  "generatedAt": "2026-11-17T03:45:04.116Z",
   "sources": {
     "effects": "src/gl/fx/shaderEffects.ts (FX_EFFECTS)",
     "luts": "src/gl/fx/lutEffects.ts (LUT_EFFECTS)",
@@ -20,8 +20,9 @@
     "template": 235,
     "total": 300,
     "duplicateAssetIds": [],
-    "templateViOk": 136,
-    "templateViReviewed": 235
+    "templateViOk": 131,
+    "templateViReviewed": 235,
+    "templateViStackFailed": 10
   },
   "items": [
     {
@@ -3231,7 +3232,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "452d340f-f4f4-4747-bec6-018cf639d10e",
@@ -3430,7 +3433,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "847102e7-ec7f-4c4c-ad8a-f015f5b31fc7",
@@ -3519,7 +3524,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "a7b5e885-25ae-4970-9d5e-d451e9d8da7a",
@@ -3698,7 +3705,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "1c49b2f1-3dce-4953-afd1-674ae0a285e8",
@@ -3797,7 +3806,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "d03ead86-a81b-4638-98d3-2fae21c1715b",
@@ -3906,7 +3917,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "c63df7ef-fc63-491b-ae4b-30a34d88d8ae",
@@ -4015,7 +4028,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "9e4ffbcc-ec05-4a3b-b54f-0ffe7f571efd",
@@ -4224,7 +4239,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "6e2cda87-034d-4a76-8fd5-1f0bea0d6b00",
@@ -4408,7 +4425,9 @@
           "issue": "accent_clipped",
           "note": "stacked tilde on ễ cut off by a per-line mask: renders \"Nguyên\""
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "f7361a72-e5c6-4ed7-aebf-95fd541676d5",
@@ -4647,7 +4666,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "d82c1bd4-4654-4f92-809d-32eba00a88f0",
@@ -4886,7 +4907,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "7ef378f4-bbee-4529-8e79-30d5591e3017",
@@ -4909,7 +4932,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "9b186c75-5a70-429d-bcfb-a09805172ef9",
@@ -5108,7 +5133,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "5e015143-44fa-4cc4-bb04-f692e011a1ee",
@@ -5302,7 +5329,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "3e399f3e-d0f3-4bfd-a4e7-304f32d0dfd9",
@@ -5541,7 +5570,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "38bd86e5-2f30-46f7-ade8-1a9711220f0d",
@@ -5564,7 +5595,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "6cdf1268-c279-4c5d-a540-3f59501fbe0d",
@@ -5587,7 +5620,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "145263b5-d513-4612-80fd-db56effa77f8",
@@ -5610,7 +5645,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "1a4cd0c3-ba36-4457-8428-49e57c61292f",
@@ -5633,7 +5670,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "6d14754c-1e8a-4920-85ff-953203b42afe",
@@ -5712,7 +5751,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "74444c9b-b846-496e-a5d9-e8e1c5887b95",
@@ -5735,7 +5776,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "798fa1a8-771d-4c97-b900-8a9004266304",
@@ -5839,7 +5882,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "c430c730-8ff2-4a4b-86af-230563431c49",
@@ -5953,7 +5998,9 @@
           "issue": "accent_clipped",
           "note": "stacked tilde on ễ cut off by a per-line mask: renders \"Nguyên\""
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "033ce93d-219c-4100-9b53-83adf2e19d39",
@@ -6032,7 +6079,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "c206d9e8-7cc6-428f-a030-65f5758641a5",
@@ -6055,7 +6104,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "0371e3ac-0449-4e8d-a5df-c758ccdbba44",
@@ -6204,7 +6255,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "26c175c6-f05d-4370-913a-c63b15b05314",
@@ -6227,7 +6280,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "0273f371-8c99-4d7f-b51e-096edd9d2188",
@@ -6396,7 +6451,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "82a91144-3342-4599-8fc0-a0b02f5d3933",
@@ -6495,7 +6552,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "97d3b441-1916-48bc-a11c-9af4ff6fb0be",
@@ -6634,7 +6693,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "a456f6df-9683-4ff9-b4be-d80208b92d16",
@@ -6657,7 +6718,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "f9b5adcd-fc88-4f3b-b4f2-c74befe1317e",
@@ -6916,7 +6979,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "86b95e5b-18d1-4074-9dbc-22229237a8ee",
@@ -7009,7 +7074,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "53dd0f34-fa25-4999-b317-5122f11d258c",
@@ -7108,7 +7175,9 @@
           "issue": "text_overflow",
           "note": "numeric counter field: text renders as \"…NaN\" and overflows"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "c6508fa2-0507-45af-b0a4-9859f49fec0d",
@@ -7131,7 +7200,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "b0e7ccf7-d84c-4baf-aca4-678d3ad4b11e",
@@ -7205,7 +7276,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "0d6f793e-8501-479e-bd78-f75dc32fb0aa",
@@ -7333,7 +7406,9 @@
           "issue": "text_props_ignored",
           "note": "declared text props have no effect: default and Vietnamese renders are identical (hard-coded text)"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "e0d468df-601e-4ac6-befe-9870696b4f2c",
@@ -7427,7 +7502,9 @@
           "issue": "text_props_ignored",
           "note": "declared text props have no effect: default and Vietnamese renders are identical (hard-coded text)"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "03decebd-7066-4257-b21c-250151c5c8d2",
@@ -7656,7 +7733,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "05ae4e10-0bf7-4611-bd7e-135b9e2c8ee9",
@@ -7725,7 +7804,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "ccbf5be2-d5a7-45f5-835a-016ad845cc33",
@@ -7824,7 +7905,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "9d11fc67-dc78-4d78-b797-f0d76c816858",
@@ -7953,7 +8036,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "8f195239-642e-44fa-aa03-7de513e56ab4",
@@ -8057,7 +8142,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "6f06cbe0-4bd3-4382-91cd-e8d6c01a155a",
@@ -8226,7 +8313,9 @@
           "issue": "text_props_ignored",
           "note": "declared text props have no effect: default and Vietnamese renders are identical (hard-coded text)"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "49756343-72e4-48aa-8a3d-cc66975d3435",
@@ -8320,7 +8409,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "23f4a551-32fa-4cf7-ae35-abaa9c3d093c",
@@ -8399,7 +8490,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "7c8eb54a-f237-4334-b6ba-c55421c3d35a",
@@ -8488,7 +8581,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "10d5638b-dc0f-4362-8cf8-f6bb14340331",
@@ -8571,9 +8666,19 @@
           "editable": true
         }
       ],
-      "vi_ok": true,
-      "vi_status": "ok",
-      "vi_issues": []
+      "vi_ok": false,
+      "vi_status": "fail_stacked_marks",
+      "vi_issues": [
+        {
+          "issue": "stacked_marks_detached",
+          "note": "second mark drawn apart from its letter (circumflex, breve) in: \"Georgia\", \"Times New Roman\", serif"
+        }
+      ],
+      "vi_stack_status": "fail_stacked_marks",
+      "vi_stack_failed": [
+        "circumflex",
+        "breve"
+      ]
     },
     {
       "id": "b6ed6fcb-f11c-4209-8f45-9217ccb9d03c",
@@ -8665,9 +8770,19 @@
           "editable": true
         }
       ],
-      "vi_ok": true,
-      "vi_status": "ok",
-      "vi_issues": [],
+      "vi_ok": false,
+      "vi_status": "fail_stacked_marks",
+      "vi_issues": [
+        {
+          "issue": "stacked_marks_detached",
+          "note": "second mark drawn apart from its letter (circumflex, breve) in: Georgia, serif"
+        }
+      ],
+      "vi_stack_status": "fail_stacked_marks",
+      "vi_stack_failed": [
+        "circumflex",
+        "breve"
+      ],
       "vi_warnings": [
         "references Georgia (no Vietnamese glyphs); rendered text looked consistent"
       ]
@@ -8757,7 +8872,9 @@
           "issue": "accent_clipped",
           "note": "accents of first line cut by container top; lines collide"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "63ea06e3-3c00-4a22-920d-5b7e8df2b21b",
@@ -8826,7 +8943,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "b820ad1e-f2e5-4a49-93de-28add26db506",
@@ -8907,7 +9026,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "8963b40a-b5b0-4076-8831-e1e227a9a777",
@@ -9001,7 +9122,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "08aeec62-dffe-4973-b1da-b9bddd492d63",
@@ -9024,7 +9147,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "5a14be9d-3155-4519-b2c3-0974ee1e7006",
@@ -9047,7 +9172,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "1b06459e-b43f-4a46-9e0f-dd3f67202373",
@@ -9136,7 +9263,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "a2abdfc4-c794-4224-b89a-07c0f4009129",
@@ -9229,7 +9358,16 @@
         {
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
+        },
+        {
+          "issue": "stacked_marks_detached",
+          "note": "second mark drawn apart from its letter (circumflex, breve) in: \"Cormorant Garamond\", \"Georgia\", serif"
         }
+      ],
+      "vi_stack_status": "fail_stacked_marks",
+      "vi_stack_failed": [
+        "circumflex",
+        "breve"
       ]
     },
     {
@@ -9341,7 +9479,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "ef4231df-8e0a-43b8-9dfc-76bac9c1eeb9",
@@ -9410,7 +9550,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "7fa3108f-346f-42ba-b707-b15e8282fe6e",
@@ -9489,7 +9631,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "893c85e4-940f-4cbc-b0fc-2db3a2f48392",
@@ -9588,7 +9732,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "bf565cad-9797-470c-909a-e91e5f5ba0a8",
@@ -9747,7 +9893,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "8aedc1d6-c5c8-44f0-9f3d-9ed78fd55f69",
@@ -9824,7 +9972,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "a75ac7ba-db04-4266-93b9-9ebd0614dc06",
@@ -9966,7 +10116,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "4de08f53-df3a-47ed-bd45-e541386b27fa",
@@ -10148,7 +10300,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "7f1570f1-c211-4143-b15d-76849729d786",
@@ -10202,7 +10356,9 @@
           "issue": "text_props_ignored",
           "note": "declared text props have no effect: default and Vietnamese renders are identical (hard-coded text)"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "83a77388-8670-4df0-bd5e-b4e3b59c92ce",
@@ -10291,7 +10447,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "3515f6e1-019d-408d-9396-59cdea42abb1",
@@ -10380,7 +10538,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "4792b7a4-126f-48ac-9a0c-7dfcd9a2891b",
@@ -10469,7 +10629,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "2e4c55aa-3c66-49b9-9b24-bd85d03e58a4",
@@ -10563,7 +10725,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "79b030e8-cd48-4065-8beb-4cd3644ab9fe",
@@ -10652,7 +10816,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "fb80f5e4-170e-4cd0-a9da-e59829d9e8d5",
@@ -10746,7 +10912,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "8303fddb-dba0-474b-a1cc-58f40728482b",
@@ -10850,7 +11018,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "e816057d-bd49-4a82-880c-d4555a9c1dce",
@@ -10994,7 +11164,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "b90365b4-68f6-4de6-9d79-96f6bb9f90e4",
@@ -11017,7 +11189,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "6d5ae7e6-e458-40ef-8633-383bfc0e8279",
@@ -11100,7 +11274,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "935cd0e3-39a1-4b7d-bc0e-90145cc98cd2",
@@ -11282,9 +11458,19 @@
           "editable": true
         }
       ],
-      "vi_ok": true,
-      "vi_status": "ok",
-      "vi_issues": []
+      "vi_ok": false,
+      "vi_status": "fail_stacked_marks",
+      "vi_issues": [
+        {
+          "issue": "stacked_marks_detached",
+          "note": "second mark drawn apart from its letter (circumflex, breve) in: \"Playfair Display\", \"Georgia\", serif | \"Abril Fatface\", \"Georgia\", cursive"
+        }
+      ],
+      "vi_stack_status": "fail_stacked_marks",
+      "vi_stack_failed": [
+        "circumflex",
+        "breve"
+      ]
     },
     {
       "id": "3554d937-05c5-4ffb-835d-aa8db1a48ace",
@@ -11452,7 +11638,9 @@
           "issue": "glyph_fallback",
           "note": "Caveat has no Vietnamese subset: ứ Ủ Ở ễ drawn in a fallback serif"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "ab423e37-dbc8-4e05-944a-8f0a1895332e",
@@ -11556,7 +11744,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "435ca688-a7aa-4b5a-ac7b-d6994b2cbe36",
@@ -11579,7 +11769,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "30ff329c-f4cc-49cf-afae-8c98299039f5",
@@ -11606,7 +11798,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "f11ec59a-6c28-4b03-8dae-e9e98516547d",
@@ -11694,7 +11888,9 @@
           "issue": "glyph_fallback",
           "note": "display face lacks Vietnamese: Ứ Ủ Ở Ễ in a different font, gap in \"NGUYỄ N\""
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "c480c5c8-9812-49ab-a04b-1dfef0405aa8",
@@ -11773,7 +11969,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "1bdbddfd-60bc-4fb3-ab57-c8a6427777ae",
@@ -11796,7 +11994,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "659cd252-7419-45d5-bbf1-3f6253f12811",
@@ -11819,7 +12019,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "afe39099-fba4-4b59-ad48-31a2bf55bc61",
@@ -11842,7 +12044,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "2995a5a5-7240-4c9a-8528-c167b8dce239",
@@ -11941,7 +12145,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "7c576ae9-ee31-4727-ad3b-b71891bc3e21",
@@ -11964,7 +12170,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "347681ff-bc76-452c-814b-4e82d4e5d255",
@@ -11987,7 +12195,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "9d2bedfe-7840-4bfa-80d4-7e27074071bc",
@@ -12096,7 +12306,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok_decorative_only",
+      "vi_stack_failed": []
     },
     {
       "id": "47caa17c-0e24-4447-b549-766163e8efe0",
@@ -12195,7 +12407,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "c8675840-2115-4060-be44-0d6be2fc8827",
@@ -12312,9 +12526,19 @@
           "editable": true
         }
       ],
-      "vi_ok": true,
-      "vi_status": "ok",
-      "vi_issues": [],
+      "vi_ok": false,
+      "vi_status": "fail_stacked_marks",
+      "vi_issues": [
+        {
+          "issue": "stacked_marks_detached",
+          "note": "second mark drawn apart from its letter (circumflex, breve) in: Georgia, serif"
+        }
+      ],
+      "vi_stack_status": "fail_stacked_marks",
+      "vi_stack_failed": [
+        "circumflex",
+        "breve"
+      ],
       "vi_warnings": [
         "references Georgia (no Vietnamese glyphs); rendered text looked consistent"
       ]
@@ -12416,7 +12640,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "dfda4ffe-ab11-4da3-94e7-963a41d79fb4",
@@ -12515,7 +12741,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "8a36f4ee-a5b8-435e-bfad-bd8e91820c9e",
@@ -12609,7 +12837,9 @@
           "issue": "accent_collision",
           "note": "line-height too tight: accents of one line land in the line above (false dots/tildes, e.g. \"GIẠ\", \"ĐỤC\")"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "ec6ac23d-85e8-4b16-9135-7665f5a03aa8",
@@ -12737,7 +12967,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "cc793049-2b5e-4e06-b952-9834524bb169",
@@ -12811,7 +13043,9 @@
           "issue": "text_props_ignored",
           "note": "declared text props have no effect: default and Vietnamese renders are identical (hard-coded text)"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "1ed40a68-6303-427a-94f9-5197a0af7869",
@@ -12900,7 +13134,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "c987c3d3-e85b-40cf-adca-44ca22b6215a",
@@ -12923,7 +13159,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "ea1d0a33-02a9-4d9e-ae44-99a4e133561c",
@@ -12946,7 +13184,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "14209866-efb6-4b54-bead-d8927d9bdf75",
@@ -13040,7 +13280,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "f00fd95b-31ae-4fda-ae41-cb1bbcb4df02",
@@ -13124,7 +13366,9 @@
           "issue": "text_props_ignored",
           "note": "declared text props have no effect: default and Vietnamese renders are identical (hard-coded text)"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "7ec411f4-9c96-49b5-86b1-1685a81b7d82",
@@ -13193,7 +13437,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "2063446e-f68f-4284-ae99-aefd13bd4824",
@@ -13298,7 +13544,16 @@
         {
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
+        },
+        {
+          "issue": "stacked_marks_detached",
+          "note": "second mark drawn apart from its letter (circumflex, breve) in: \"Georgia\", \"Times New Roman\", serif"
         }
+      ],
+      "vi_stack_status": "fail_stacked_marks",
+      "vi_stack_failed": [
+        "circumflex",
+        "breve"
       ]
     },
     {
@@ -13411,7 +13666,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "d466a3cb-a87f-4bf1-9da2-a074d9c4ef6f",
@@ -13475,7 +13732,9 @@
           "issue": "text_props_ignored",
           "note": "declared text props have no effect: default and Vietnamese renders are identical (hard-coded text)"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "0280ff3f-b1af-498b-9069-b849929f8df9",
@@ -13554,7 +13813,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "62cceb8b-a33f-45b0-a5ff-2a2be3fe2107",
@@ -13628,7 +13889,9 @@
           "issue": "text_props_ignored",
           "note": "declared text props have no effect: default and Vietnamese renders are identical (hard-coded text)"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "5293af51-b9e1-4dab-88b9-d9a49b1dbf3a",
@@ -13731,7 +13994,16 @@
         {
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
+        },
+        {
+          "issue": "stacked_marks_detached",
+          "note": "second mark drawn apart from its letter (circumflex, breve) in: Georgia, Times New Roman, serif"
         }
+      ],
+      "vi_stack_status": "fail_stacked_marks",
+      "vi_stack_failed": [
+        "circumflex",
+        "breve"
       ],
       "vi_warnings": [
         "references Georgia (no Vietnamese glyphs); rendered text looked consistent"
@@ -14019,7 +14291,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "442ab610-d550-44e7-901a-aa5d23fef8a9",
@@ -14228,7 +14502,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "33e13fa9-76d1-4483-94dc-e3f1217c0f1f",
@@ -14447,7 +14723,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "7d205758-dac2-4df5-9735-7ad781d792af",
@@ -14536,7 +14814,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "82876903-b57c-44dd-95cf-e5482749b399",
@@ -14720,7 +15000,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "19f4b9ff-8768-4c87-8e94-a5e5a9569cd7",
@@ -14984,7 +15266,9 @@
           "issue": "text_overflow_vi_only",
           "note": "only the Vietnamese render reaches the frame edge (extra accent height)"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "597bbdd4-06bf-4a2e-a064-76a72e303382",
@@ -15228,7 +15512,9 @@
           "issue": "accent_collision",
           "note": "line-height too tight: accents of one line land in the line above (false dots/tildes, e.g. \"GIẠ\", \"ĐỤC\")"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "4109203d-775b-4a3c-8f35-7f5a53e1a7b6",
@@ -15542,7 +15828,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "364c0562-4e3a-4ca6-8f1a-7be3f582d73c",
@@ -15786,7 +16074,9 @@
           "issue": "accent_collision",
           "note": "line-height too tight: accents of one line land in the line above (false dots/tildes, e.g. \"GIẠ\", \"ĐỤC\")"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "f52a0891-8de8-4fdd-a383-3e62a8793a0f",
@@ -16050,7 +16340,9 @@
           "issue": "glyph_fallback",
           "note": "Fredoka has no Vietnamese subset: Ủ Ở Ễ in a lighter fallback face"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "c77f1306-07a0-400c-aa05-303538c87ea0",
@@ -16274,7 +16566,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "d9970c80-3703-4aa6-a4b1-882d7ce0e906",
@@ -16373,7 +16667,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "243aa8dd-9cd9-41ac-8972-05d2e505f036",
@@ -16487,7 +16783,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "49e0b581-862b-42fc-bb6b-a17d0c3d1668",
@@ -16596,7 +16894,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "388494bf-f1c7-4031-add5-0bb27c2f0b4a",
@@ -16830,7 +17130,9 @@
           "issue": "accent_collision",
           "note": "line-height too tight: accents of one line land in the line above (false dots/tildes, e.g. \"GIẠ\", \"ĐỤC\")"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "6d784a29-b0d8-4228-8489-b0f75bf34c0e",
@@ -16949,7 +17251,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "6cb35207-77ab-4538-8b60-9fe32f493460",
@@ -17088,7 +17392,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "29c9bddc-0e29-4665-bc2a-bf966aeaac6b",
@@ -17197,7 +17503,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "d8ed2e4b-8b7e-4b4d-8942-7ac0c4b7800a",
@@ -17421,7 +17729,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "6439d0c9-4297-4d3c-9b07-3132668de166",
@@ -17610,7 +17920,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "3cc81aaa-2429-4be0-acc1-5e39dd946836",
@@ -17789,7 +18101,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "207da43b-d3e8-4f05-81b9-25fbe97c50f4",
@@ -17893,7 +18207,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "a73aa354-9e8c-459a-a94a-78b0547d9a67",
@@ -17997,7 +18313,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "8744f05e-4976-4430-a14e-85a167301c14",
@@ -18077,6 +18395,8 @@
       "vi_ok": true,
       "vi_status": "ok",
       "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": [],
       "vi_warnings": [
         "references Impact (no Vietnamese glyphs); rendered text looked consistent",
         "font(s) not bundled or Google-loaded, depend on render machine: Impact"
@@ -18174,7 +18494,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "9f4d7811-0ee5-4b92-b8cb-35e980edf8ac",
@@ -18583,7 +18905,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "f4ed16bb-209c-4f61-89ea-4eb6a6909163",
@@ -18667,7 +18991,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "ec40c650-4d7d-476f-a891-fe4d722fdcca",
@@ -18771,7 +19097,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "99e8292a-f939-469e-82c8-3ff5334ae41b",
@@ -18920,7 +19248,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "dd96bb2f-ec3c-466b-84b6-23c5735339b7",
@@ -19119,7 +19449,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "6fba5c4c-4003-41c3-b1ea-3482b1214293",
@@ -19232,7 +19564,16 @@
         {
           "issue": "text_props_ignored",
           "note": "declared text props have no effect: default and Vietnamese renders are identical (hard-coded text)"
+        },
+        {
+          "issue": "stacked_marks_detached",
+          "note": "second mark drawn apart from its letter (circumflex, breve) in: Georgia, serif"
         }
+      ],
+      "vi_stack_status": "fail_stacked_marks",
+      "vi_stack_failed": [
+        "circumflex",
+        "breve"
       ]
     },
     {
@@ -19467,7 +19808,9 @@
           "issue": "glyph_fallback",
           "note": "Special Elite has no Vietnamese subset: Ủ Ở in a clean serif amid typewriter glyphs"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "3f1510e3-5908-46ac-87f4-1714a57671f0",
@@ -19731,7 +20074,9 @@
           "issue": "accent_collision",
           "note": "line-height too tight: accents of one line land in the line above (false dots/tildes, e.g. \"GIẠ\", \"ĐỤC\")"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "b18138db-db81-4e97-8eec-30e69ca071b3",
@@ -19910,7 +20255,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "82cf935e-d02a-496b-bad3-12a3876328a9",
@@ -19933,7 +20280,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "a9f9348f-eb15-4064-b5d8-f164dd82cb9b",
@@ -20042,7 +20391,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "2c38ab81-0d44-485f-9981-a3e36ef785b6",
@@ -20141,7 +20492,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "77c25412-0768-4c6f-a56d-3d78b5481ff0",
@@ -20250,7 +20603,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "1b401c0b-0bd3-47e0-a64f-93f470e2fb6c",
@@ -20409,7 +20764,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "4a1c2bc0-9798-4ef4-bbf9-0517cc5ca787",
@@ -20558,7 +20915,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "4444d0ce-ac02-4831-ad25-dd90b6aea350",
@@ -20717,7 +21076,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "3ce620cb-4199-45cc-984a-6cefe31727c2",
@@ -20821,7 +21182,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "aa69b6e7-ef97-4baf-8594-c614d4d12117",
@@ -20900,7 +21263,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "751adbfe-0a1d-4d9d-97d5-21d050c75442",
@@ -20964,7 +21329,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "b30d07d4-30ba-4db6-8970-093b1cfcecf7",
@@ -21063,7 +21430,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "ec5bfc1f-7826-40ad-9657-46b33ab730e6",
@@ -21182,7 +21551,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "9be0ad20-a161-485b-854f-2695a8710123",
@@ -21267,6 +21638,8 @@
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
       ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": [],
       "vi_warnings": [
         "references Georgia (no Vietnamese glyphs); rendered text looked consistent"
       ]
@@ -21378,7 +21751,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "9c22e1ef-0735-46a9-9e63-c4f276aa6592",
@@ -21458,6 +21833,8 @@
       "vi_ok": true,
       "vi_status": "ok",
       "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": [],
       "vi_warnings": [
         "auto edge flag was a false positive (background art touches frame)"
       ]
@@ -21540,6 +21917,8 @@
       "vi_ok": true,
       "vi_status": "ok",
       "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": [],
       "vi_warnings": [
         "auto edge flag was a false positive (background art touches frame)"
       ]
@@ -21622,6 +22001,8 @@
       "vi_ok": true,
       "vi_status": "ok",
       "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": [],
       "vi_warnings": [
         "auto edge flag was a false positive (background art touches frame)"
       ]
@@ -21704,6 +22085,8 @@
       "vi_ok": true,
       "vi_status": "ok",
       "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": [],
       "vi_warnings": [
         "auto edge flag was a false positive (background art touches frame)"
       ]
@@ -21786,6 +22169,8 @@
       "vi_ok": true,
       "vi_status": "ok",
       "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": [],
       "vi_warnings": [
         "auto edge flag was a false positive (background art touches frame)"
       ]
@@ -21892,7 +22277,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "d490ac7f-2e06-469d-ab59-0584094ac5da",
@@ -21961,6 +22348,8 @@
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
       ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": [],
       "vi_warnings": [
         "font(s) not bundled or Google-loaded, depend on render machine: Impact"
       ]
@@ -22071,7 +22460,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "61b838f2-a46c-4118-91e4-1c2d61e5b184",
@@ -22144,7 +22535,16 @@
         {
           "issue": "glyph_fallback",
           "note": "DM Sans has no Vietnamese subset: serif Ủ Ở inside sans text"
+        },
+        {
+          "issue": "stacked_marks_detached",
+          "note": "second mark drawn apart from its letter (circumflex, breve) in: Georgia, \"Times New Roman\", serif"
         }
+      ],
+      "vi_stack_status": "fail_stacked_marks",
+      "vi_stack_failed": [
+        "circumflex",
+        "breve"
       ]
     },
     {
@@ -22255,6 +22655,8 @@
       "vi_ok": true,
       "vi_status": "ok",
       "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": [],
       "vi_warnings": [
         "references DM Sans (no Vietnamese glyphs); rendered text looked consistent"
       ]
@@ -22387,6 +22789,8 @@
       "vi_ok": true,
       "vi_status": "ok",
       "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": [],
       "vi_warnings": [
         "references DM Sans (no Vietnamese glyphs); rendered text looked consistent"
       ]
@@ -22484,6 +22888,8 @@
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
       ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": [],
       "vi_warnings": [
         "references DM Sans (no Vietnamese glyphs); rendered text looked consistent"
       ]
@@ -22695,7 +23101,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "5a3d3074-e947-454c-be17-61763d195186",
@@ -22809,7 +23217,9 @@
           "issue": "accent_collision",
           "note": "line-height too tight: accents of one line land in the line above (false dots/tildes, e.g. \"GIẠ\", \"ĐỤC\")"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "7e255237-89e4-40c7-b7f2-bc9c6acfb934",
@@ -22933,7 +23343,9 @@
           "issue": "accent_collision",
           "note": "line-height too tight: accents of one line land in the line above (false dots/tildes, e.g. \"GIẠ\", \"ĐỤC\")"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "f3fb5e13-4727-45d2-8c1d-fb963b354a1e",
@@ -23057,7 +23469,9 @@
           "issue": "accent_collision",
           "note": "line-height too tight: accents of one line land in the line above (false dots/tildes, e.g. \"GIẠ\", \"ĐỤC\")"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "b5cb1e75-4e94-4f37-b5c6-4c309320b2bd",
@@ -23246,7 +23660,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "75dae426-6c04-4ffd-9de5-9a4c5959d87c",
@@ -23435,7 +23851,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "f767f837-0255-49c4-8f17-01a168f1f7a3",
@@ -23559,7 +23977,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "476fed54-d5de-4a5d-85ce-b9c12dc15abb",
@@ -23638,7 +24058,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "34151422-9674-4a31-a2a7-ade3932e0aef",
@@ -23767,7 +24189,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "fc1c2614-8907-4dd4-b0ea-0ef7f272a3e0",
@@ -23876,7 +24300,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "847b9656-7989-42c6-ab6a-87a8efe0a20a",
@@ -24016,6 +24442,8 @@
       "vi_ok": true,
       "vi_status": "ok",
       "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": [],
       "vi_warnings": [
         "references Georgia (no Vietnamese glyphs); rendered text looked consistent"
       ]
@@ -24108,6 +24536,8 @@
       "vi_ok": true,
       "vi_status": "ok",
       "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": [],
       "vi_warnings": [
         "auto edge flag was a false positive (background art touches frame)"
       ]
@@ -24434,7 +24864,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "1d52fd05-95dc-4cee-b7ea-4ffff59b6f2d",
@@ -24518,7 +24950,9 @@
           "issue": "text_props_ignored",
           "note": "declared text props have no effect: default and Vietnamese renders are identical (hard-coded text)"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "7e9f53fa-3036-47a6-a27f-48acf2e49e48",
@@ -24618,6 +25052,8 @@
       "vi_ok": true,
       "vi_status": "ok",
       "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": [],
       "vi_warnings": [
         "references Georgia (no Vietnamese glyphs); rendered text looked consistent"
       ]
@@ -24740,6 +25176,8 @@
       "vi_ok": true,
       "vi_status": "ok",
       "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": [],
       "vi_warnings": [
         "references Georgia (no Vietnamese glyphs); rendered text looked consistent"
       ]
@@ -24851,7 +25289,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "0f42b597-2b83-4e6c-9a7b-19f9b0b0ef98",
@@ -25051,6 +25491,8 @@
       "vi_ok": true,
       "vi_status": "ok",
       "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": [],
       "vi_warnings": [
         "font(s) not bundled or Google-loaded, depend on render machine: Lora"
       ]
@@ -25163,6 +25605,8 @@
       "vi_ok": true,
       "vi_status": "ok",
       "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": [],
       "vi_warnings": [
         "font(s) not bundled or Google-loaded, depend on render machine: Lora"
       ]
@@ -25355,6 +25799,8 @@
       "vi_ok": true,
       "vi_status": "ok",
       "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": [],
       "vi_warnings": [
         "font(s) not bundled or Google-loaded, depend on render machine: Lora"
       ]
@@ -25447,6 +25893,8 @@
       "vi_ok": true,
       "vi_status": "ok",
       "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": [],
       "vi_warnings": [
         "font(s) not bundled or Google-loaded, depend on render machine: Lora"
       ]
@@ -25529,6 +25977,8 @@
       "vi_ok": true,
       "vi_status": "ok",
       "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": [],
       "vi_warnings": [
         "font(s) not bundled or Google-loaded, depend on render machine: Lora"
       ]
@@ -25615,7 +26065,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "924424d1-3f6d-4693-819c-c0cfae1aaf11",
@@ -25744,7 +26196,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "a6e86e59-c544-4ee5-8c49-e8bfed68712b",
@@ -26032,7 +26486,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "2b8c54b0-3429-481b-8dcd-dbbe3acd8f03",
@@ -26126,7 +26582,9 @@
           "issue": "text_overflow",
           "note": "numeric counter field: text renders as \"…NaN\" and overflows"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "9e649199-8bda-434b-a208-862e88829668",
@@ -26390,7 +26848,9 @@
           "issue": "glyph_fallback",
           "note": "Caveat has no Vietnamese subset: ứ Ủ Ở ễ drawn in a fallback serif"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "e7d1fceb-4526-42bc-b8a7-fec4407e5a51",
@@ -26454,7 +26914,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "dde936b2-bdc0-411d-800e-9fbfc34e3827",
@@ -26543,7 +27005,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "76002b44-e277-4db9-80ca-a5c9e0cb15f3",
@@ -26712,7 +27176,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "1afea496-4002-4a6e-9a22-2e8da948f086",
@@ -26840,7 +27306,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "588b4fb1-6178-4e49-a8f9-42e947c0e4fc",
@@ -26964,7 +27432,9 @@
           "issue": "accent_clipped",
           "note": "thin caps: hook above and stacked tilde clipped (Ở→Ơ, NGUYỄN→NGUYÊN)"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "c1d4287a-a6b4-4710-a1dd-bc6420554923",
@@ -27143,7 +27613,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "5957f338-1913-4571-8f5d-07304f691bec",
@@ -27322,7 +27794,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "6ce4db2a-66d0-4c28-b869-6227800d8fa9",
@@ -27531,7 +28005,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "ca1b1b60-d036-4dfb-a02c-1b511a45a27f",
@@ -27635,7 +28111,9 @@
           "issue": "no_editable_text_field",
           "note": "propSchema has no text/string prop; text is baked into template code"
         }
-      ]
+      ],
+      "vi_stack_status": "no_text_field",
+      "vi_stack_failed": []
     },
     {
       "id": "32da30ba-83e3-43df-94f6-0f62e996a815",
@@ -27803,7 +28281,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "17a91a44-4a0d-42c3-a0fa-f9a7d0613fe5",
@@ -27907,7 +28387,9 @@
           "issue": "text_overflow",
           "note": "test string too long for the field: truncated, ellipsised, clipped, overlapping or off-frame"
         }
-      ]
+      ],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "874f586e-280e-4ea1-b224-a2213ca3c25e",
@@ -28006,7 +28488,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "58b32a8f-8d9e-4521-85d6-277dfb37fd68",
@@ -28105,7 +28589,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "988db173-b9f1-484e-bbed-9e33c238ff4a",
@@ -28184,7 +28670,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "4103210c-e3ee-4589-8626-307036bc61a3",
@@ -28563,7 +29051,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "ss-keyword-pop",
@@ -28638,7 +29128,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "ss-big-caption",
@@ -28713,7 +29205,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "ss-quote-card",
@@ -28788,7 +29282,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "ss-name-bar",
@@ -28863,7 +29359,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "ss-cta-follow",
@@ -28938,7 +29436,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "ss-step-list",
@@ -29033,7 +29533,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "ss-big-number",
@@ -29108,7 +29610,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "ss-chapter",
@@ -29193,7 +29697,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "ss-price-tag",
@@ -29268,7 +29774,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "ss-cover-title",
@@ -29333,7 +29841,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "ss-checklist",
@@ -29418,7 +29928,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "ss-before-after",
@@ -29513,7 +30025,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "ss-note-sticker",
@@ -29588,7 +30102,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "ss-social-actions",
@@ -29663,7 +30179,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "ss-episode-badge",
@@ -29738,7 +30256,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "kb-beige-grid",
@@ -29845,7 +30365,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "kb-latte-lines",
@@ -29942,7 +30464,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "kb-chalkboard",
@@ -30029,7 +30553,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "kb-collage-split",
@@ -30108,7 +30634,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "kb-parchment",
@@ -30193,9 +30721,19 @@
           "editable": true
         }
       ],
-      "vi_ok": true,
-      "vi_status": "ok",
-      "vi_issues": []
+      "vi_ok": false,
+      "vi_status": "fail_stacked_marks",
+      "vi_issues": [
+        {
+          "issue": "stacked_marks_detached",
+          "note": "second mark drawn apart from its letter (circumflex, breve) in: Georgia, \"Songti SC\", \"STSong\", \"SimSun\", serif"
+        }
+      ],
+      "vi_stack_status": "fail_stacked_marks",
+      "vi_stack_failed": [
+        "circumflex",
+        "breve"
+      ]
     },
     {
       "id": "kb-split-note",
@@ -30254,7 +30792,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "kb-split-dots",
@@ -30323,7 +30863,9 @@
       ],
       "vi_ok": true,
       "vi_status": "ok",
-      "vi_issues": []
+      "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": []
     },
     {
       "id": "kb-kraft-corner",
@@ -30401,6 +30943,8 @@
       "vi_ok": true,
       "vi_status": "ok",
       "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": [],
       "vi_warnings": [
         "auto edge flag was a false positive (background art touches frame)"
       ]
@@ -30463,6 +31007,8 @@
       "vi_ok": true,
       "vi_status": "ok",
       "vi_issues": [],
+      "vi_stack_status": "ok",
+      "vi_stack_failed": [],
       "vi_warnings": [
         "auto edge flag was a false positive (background art touches frame)"
       ]

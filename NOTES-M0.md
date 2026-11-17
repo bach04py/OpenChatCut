@@ -491,3 +491,92 @@ Some templates carry more than one issue: 5 of the Vietnamese failures also over
 - **The length failures depend on my test string.** I put the same 25-character string into every text field, including short labels such as chart legends.
 - **Platform-specific.** Results are for a **Windows** render machine. Templates that rely on system fonts (`Georgia`, `Impact`, `Lora`, `system-ui`, generic `serif`) will render differently on Linux or macOS.
 - **The pass/fail calls come from my visual review, and some are judgement calls.** Subtle Georgia/DM Sans substitutions that looked consistent are recorded as `vi_warnings`, not failures.
+
+# M3 (2026-11-17): stacked diacritics, a stricter vi_ok
+
+The M2 test line ("Đức Ủy Ở Hoàng Gia Nguyễn") has no letter that stacks a second mark on a
+circumflex, horn or breve. A preview of "ĐỐT MỠ ĐÓN TẾT" showed three vi_ok templates rendering
+"ĐÔ´T": the acute drawn as a separate spacing glyph after the letter.
+
+## S1. Cause
+
+Windows **Georgia** has Ô, Ê, Â, Ă and the combining acute/grave, but not the precomposed
+Ố Ế Ấ Ắ … glyphs. Chrome decomposes the letter and, with no mark anchors, places the acute or
+grave after it. Hook above, tilde and dot below stack correctly. Horn letters are fine. Every
+failure found is Georgia, either named first or reached as a fallback:
+- `"Playfair Display", "Georgia", serif` and `"Abril Fatface", "Georgia", cursive` also fail.
+- **Playfair** has Vietnamese, but these templates write the stack as `'"Playfair Display", …'`.
+  The font loader's regex (`projectFonts.ts` `scanCodeForFonts`) cannot read a single-quoted
+  string that starts with `"`, so Playfair is never loaded and Georgia renders instead. That was
+  confirmed on a real frame (Gradient Layered Text Page).
+- **Abril Fatface** has no Vietnamese subset.
+- **Not fixed here:** the loader regex, and vendoring a Vietnamese-complete serif.
+
+## S2. Method: `scripts/vi-stack-check.mts` → `vi-stack-review.json`
+
+Whole-template frame comparisons were tried first and were unreliable. Cards resize with the
+text, chart labels wrap differently when a CJK-first stack falls back per letter, and that moves
+pixels exactly like a shifted mark does. One known-bad template passed and one good one failed.
+The defect belongs to the font, so the check tests fonts.
+
+1. **Font stacks per template:**
+   - every `fontFamily` value and every single-line string literal in its code that is a CSS
+     font list naming a known or generic family;
+   - every font-type prop;
+   - the inherited default.
+
+   Over-inclusion only makes the check stricter, with one narrow exception: a failing stack is
+   *decorative* (reported, but does not fail the template) when every element using it sets it
+   inline in `style={{…}}`, has no nested elements, and shows only fixed text or props that are
+   not declared text fields. A plan can never put Vietnamese there. Anything else counts,
+   including style objects applied elsewhere. This exception matters for one template: Community
+   Welcome Screen draws undeclared `bgText1`/`bgText3` ("You're In", "THE CREW") in
+   Playfair/Abril. Its text fields use Inter.
+2. **Harness:** a synthetic motion-graphic, rendered through the same Remotion bundle. It carries
+   the template's props and its code as `//` comments, so the font loader loads exactly what the
+   template would. It draws each of the 66 test letters in its own cell, once as the single-mark
+   base (Ố→Ô, Ớ→Ơ, Ắ→Ă, Đ→D, ỳ→y) and once stacked, at weight 400, weight 700 and italic.
+3. **Verdict per cell:** the new ink in the stacked render is the second mark. It is *detached*
+   when it starts more than 0.05 letter-widths past the base letter's right edge.
+   - **Calibration:** real detached marks start 0.13–0.65 widths past the letter's right edge
+     (Georgia, every style). Attached marks on slanted faces reach −0.05 (Space Mono italic),
+     which was a false positive with a tighter rule.
+   - **Missing:** no new ink means the mark was dropped.
+   - **Fallback:** a glyph from a fallback font counts as attached (mixed fonts are M2's
+     concern).
+4. **Letters:** they come from 33 short realistic lines, upper and lower case ("ĐỐT MỠ ĐÓN TẾT",
+   "SẮP TẾT RỒI", "TẬP LUYỆN MỖI NGÀY", "KHỎE TỪ BÊN TRONG", "kỳ tích, kỷ lục" …). A self-check
+   fails the script if any family letter is missing. Families: circumflex ỐỒỔỖỘ ẾỀỂỄỆ ẤẦẨẪẬ;
+   horn ỚỜỞỠỢ ỨỪỬỮỰ; breve ẮẰẲẴẶ; plus Đ đ ỳ ỷ ỹ ỵ.
+
+Full run: 235 templates, 373 s, 0 errors.
+
+## S3. Result: **131 of 235 vi_ok** (was 136; 5 lost, 0 gained)
+
+`dump-catalogue.mts` sets `vi_ok = M2 vi_ok AND stack_ok`. It fails closed: a template with no
+stacked-check entry is not vi_ok. Templates that lost the flag get `vi_status:
+"fail_stacked_marks"` and a `stacked_marks_detached` issue naming the families and stacks. Every
+template gets `vi_stack_status` and `vi_stack_failed`, and `counts.templateViStackFailed` counts
+them.
+
+| Template | Group | Failing stack |
+|---|---|---|
+| Distressed Paper Lower Third | lower-thirds | `"Georgia", "Times New Roman", serif` |
+| Divided Name Lower Third | lower-thirds | `Georgia, serif` |
+| Gradient Layered Text Page | text-effects | `"Playfair Display", "Georgia", serif`, `"Abril Fatface", "Georgia", cursive` (its `bgText1`–`bgText3` fields) |
+| Dial Chapter Card | title-cards | `Georgia, serif` (M2 noted it "references Georgia") |
+| 口播·羊皮纸（横） (kb-parchment) | koubo-scenes | `Georgia, "Songti SC", "STSong", "SimSun", serif` |
+
+Five more templates fail the stacked check but were already not vi_ok (3 fail_length,
+1 fail_vietnamese, 1 text_props_ignored). In all 10, the failing families are circumflex and
+breve. One template is `ok_decorative_only` (Community Welcome Screen, see S2) and keeps vi_ok.
+The 9:16 count is unchanged at 20: no social-shorts template uses Georgia.
+
+**Caveats:**
+- **Over-inclusion:** a decoration-only stack that the narrow rule above cannot prove decorative
+  still fails its template. For the lost templates, the failing stack was checked by hand to carry
+  a text field. Distressed Paper sets Georgia on its root style object, so the stack reaches both
+  of its fields.
+- **Collisions are not caught:** an attached but colliding mark (acute overlapping the
+  circumflex) counts as attached. M2's visual review covered collisions, for the M2 letters only.
+- **Platform-specific:** like M2, these results are for Windows. Georgia is a system font.

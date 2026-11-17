@@ -182,14 +182,42 @@ try {
   // No review file yet: templates are emitted without vi_* fields.
 }
 
+// Stacked-diacritic verdicts (vi-stack-review.json, from scripts/vi-stack-check.mts): a
+// template is vi_ok only if it also passes this stricter check. Fails closed: a template with
+// no stacked-check entry (or no review file) is not vi_ok.
+interface StackFailure { stack: string; style: string; letters: string; decorative?: boolean }
+interface StackReview { id: string; status: string; stack_ok: boolean; failed_families?: string[]; failures?: StackFailure[] }
+const VI_STACK_PATH = join(ROOT, 'vi-stack-review.json');
+const stackReview = new Map<string, StackReview>();
+try {
+  for (const entry of (JSON.parse(readFileSync(VI_STACK_PATH, 'utf8')) as { templates: StackReview[] }).templates) {
+    stackReview.set(entry.id, entry);
+  }
+} catch {
+  console.error(`warning: ${VI_STACK_PATH} missing or unreadable: no template will be vi_ok`);
+}
+
 function withViReview(item: CatalogueItem): CatalogueItem {
   const review = viReview.get(item.id);
   if (!review) return item;
+  const stack = stackReview.get(item.id);
+  const stackOk = stack?.stack_ok === true;
+  const failed = stack?.failed_families ?? [];
+  const lostToStack = review.vi_ok && !stackOk;
   return {
     ...item,
-    vi_ok: review.vi_ok,
-    vi_status: review.vi_status,
-    vi_issues: review.vi_issues,
+    vi_ok: review.vi_ok && stackOk,
+    vi_status: !lostToStack ? review.vi_status : stack ? 'fail_stacked_marks' : 'stacked_marks_unchecked',
+    vi_issues: [
+      ...review.vi_issues,
+      ...(failed.length ? [{
+        issue: 'stacked_marks_detached',
+        note: `second mark drawn apart from its letter (${failed.join(', ')}) in: `
+          + [...new Set((stack?.failures ?? []).filter((f) => !f.decorative).map((f) => f.stack))].join(' | '),
+      }] : []),
+    ],
+    vi_stack_status: stack?.status ?? 'unchecked',
+    vi_stack_failed: failed,
     ...(review.vi_warnings ? { vi_warnings: review.vi_warnings } : {}),
   };
 }
@@ -226,6 +254,7 @@ const catalogue = {
     duplicateAssetIds: duplicates.map((item) => item.assetId),
     templateViOk: templates.filter((item) => item.vi_ok === true).length,
     templateViReviewed: templates.filter((item) => typeof item.vi_ok === 'boolean').length,
+    templateViStackFailed: templates.filter((item) => (item.vi_stack_failed as string[] | undefined)?.length).length,
   },
   items,
 };
