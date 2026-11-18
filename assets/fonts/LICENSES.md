@@ -9,6 +9,7 @@ SIL Open Font License 1.1 text is in `OFL-1.1.txt`.
 | `smiley-sans/` | Smiley Sans / 得意黑 | Copyright © 2022–2024 atelierAnchor. Reserved Font Names: Smiley, 得意黑. <https://github.com/atelier-anchor/smiley-sans> |
 | `douyin-meihaoti/` | DouyinSans / 抖音美好体 | Copyright © 2023 Beijing Zitiao Network Technology Co., Ltd. <https://github.com/bytedance/fonts> |
 | `qingsong-shouxieti-yi/` | JasonHandwriting1 / 清松手写体一 | Copyright © 2020 Jason (Yu Ching Sung). <http://www.writes.com.tw> |
+| `gelasio-vi/` | Gelasio (Vietnamese subset only, normal + italic, variable 400–700) | Copyright 2022 The Gelasio Project Authors (<https://github.com/SorkinType/Gelasio>). Files as served by Google Fonts (v14, `vietnamese` subset). Asset hashes: [`SHA256SUMS`](gelasio-vi/SHA256SUMS). Used only to complete Georgia's stacked Vietnamese letters U+1EA0–U+1EF9 (`src/fonts/georgiaVietnamese.ts`); Georgia itself is not bundled. |
 | `qingsong-shouxieti-san-p/` | JasonHandwriting3p / 清松手写体三P | Copyright © 2020 Jason (Yu Ching Sung). <http://www.writes.com.tw> |
 
 The bundled WOFF2 files remain licensed under the SIL Open Font License 1.1.

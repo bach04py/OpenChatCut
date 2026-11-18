@@ -15,6 +15,7 @@ import {
   findLocalFont,
   registerLocalFonts,
 } from './localFonts';
+import { ensureGeorgiaVietnamese, isGeorgia } from './georgiaVietnamese';
 
 interface FontLoadResult {
   waitUntilDone: () => Promise<void>;
@@ -64,6 +65,9 @@ const fontPromises = new Map<string, Promise<void>>();
 
 /** Load one referenced face and resolve only after browser/headless readiness. */
 export function ensureFont(family: string, _fontWeight = 400): Promise<void> {
+  // Before the generic test: Georgia is listed there as a system family (nothing to download),
+  // but Windows Georgia lacks the stacked Vietnamese letters, which come from a bundled patch.
+  if (isGeorgia(family)) return ensureGeorgiaVietnamese();
   if (isGenericFontFamily(family)) return Promise.resolve();
   const canonical = resolveCanonicalFamily(family);
   if (!canonical) return Promise.resolve();

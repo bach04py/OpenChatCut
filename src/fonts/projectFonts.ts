@@ -30,9 +30,16 @@ function scanObjectForFonts(obj: unknown, into: Set<string>, depth = 0): void {
 
 function scanCodeForFonts(code: string | undefined, into: Set<string>): void {
   if (!code) return;
-  const re = /font(?:Family|-family)\s*[:=]\s*['"]([^'"]+)['"]/gi;
+  // The value runs to the matching closing quote, so a stack written as
+  // '"Playfair Display", Georgia, serif' (double quotes inside single) is read whole; the old
+  // pattern stopped at the first quote of either kind and loaded nothing for it.
+  const re = /font(?:Family|-family)\s*[:=]\s*(['"`])((?:(?!\1)[^\n])+)\1/gi;
   let match: RegExpExecArray | null;
-  while ((match = re.exec(code)) !== null) pushFamily(into, match[1]);
+  while ((match = re.exec(code)) !== null) pushFamily(into, match[2]);
+  // Georgia is often reached through a constant (const serif = 'Georgia, …'; fontFamily: serif),
+  // which the pattern above cannot follow. Its Vietnamese patch must load whenever the code can
+  // use it; loading it for code that never does is harmless (it renders as the system Georgia).
+  if (/\bgeorgia\b/i.test(code)) into.add('Georgia');
 }
 
 function fontsFromItem(item: TimelineItem, into: Set<string>): void {

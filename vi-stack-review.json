@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-17T03:44:55.476Z",
+ "generatedAt": "2026-11-18T01:14:49.465Z",
  "method": "scripts/vi-stack-check.mts (font harness, see header)",
  "lines": [
   "ĐỐT MỠ ĐÓN TẾT",
@@ -48,7 +48,7 @@
   "w700",
   "i400"
  ],
- "elapsedSeconds": 373,
+ "elapsedSeconds": 480,
  "templates": [
   {
    "id": "ca391141-ac35-4672-a2ab-90980ddae765",
@@ -697,82 +697,32 @@
    "name": "Distressed Paper Lower Third",
    "category": "lower-thirds",
    "sourceFile": "openchatcut-templates.json",
-   "status": "fail_stacked_marks",
-   "stack_ok": false,
-   "failed_families": [
-    "circumflex",
-    "breve"
-   ],
+   "status": "ok",
+   "stack_ok": true,
+   "failed_families": [],
    "decorative_failed_families": [],
    "stacks": [
     "(inherited default)",
     "\"Georgia\", \"Times New Roman\", serif",
     "\"Times New Roman\", serif"
    ],
-   "failures": [
-    {
-     "stack": "\"Georgia\", \"Times New Roman\", serif",
-     "style": "w400",
-     "image": "fails/000.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.28) Ế:detached(0.30) Ắ:detached(0.16) Ồ:detached(0.30) Ấ:detached(0.16) Ầ:detached(0.19) Ề:detached(0.32) Ằ:detached(0.19) ố:detached(0.40) ế:detached(0.42) ắ:detached(0.37) ồ:detached(0.42) ấ:detached(0.37) ầ:detached(0.39) ề:detached(0.44) ằ:detached(0.39)"
-    },
-    {
-     "stack": "\"Georgia\", \"Times New Roman\", serif",
-     "style": "w700",
-     "image": "fails/001.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.22) Ế:detached(0.23) Ắ:detached(0.13) Ồ:detached(0.23) Ấ:detached(0.13) Ầ:detached(0.13) Ề:detached(0.25) Ằ:detached(0.13) ố:detached(0.29) ế:detached(0.27) ắ:detached(0.23) ồ:detached(0.29) ấ:detached(0.23) ầ:detached(0.25) ề:detached(0.29) ằ:detached(0.25)"
-    },
-    {
-     "stack": "\"Georgia\", \"Times New Roman\", serif",
-     "style": "i400",
-     "image": "fails/002.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.38) Ế:detached(0.32) Ắ:detached(0.39) Ồ:detached(0.41) Ấ:detached(0.39) Ầ:detached(0.40) Ề:detached(0.35) Ằ:detached(0.40) ố:detached(0.60) ế:detached(0.57) ắ:detached(0.52) ồ:detached(0.65) ấ:detached(0.52) ầ:detached(0.57) ề:detached(0.62) ằ:detached(0.57)"
-    }
-   ]
+   "failures": []
   },
   {
    "id": "b6ed6fcb-f11c-4209-8f45-9217ccb9d03c",
    "name": "Divided Name Lower Third",
    "category": "lower-thirds",
    "sourceFile": "openchatcut-templates.json",
-   "status": "fail_stacked_marks",
-   "stack_ok": false,
-   "failed_families": [
-    "circumflex",
-    "breve"
-   ],
+   "status": "ok",
+   "stack_ok": true,
+   "failed_families": [],
    "decorative_failed_families": [],
    "stacks": [
     "(inherited default)",
     "Georgia, serif",
     "\"Helvetica Neue\", Helvetica, Arial, sans-serif"
    ],
-   "failures": [
-    {
-     "stack": "Georgia, serif",
-     "style": "w400",
-     "image": "fails/003.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.28) Ế:detached(0.30) Ắ:detached(0.16) Ồ:detached(0.30) Ấ:detached(0.16) Ầ:detached(0.19) Ề:detached(0.32) Ằ:detached(0.19) ố:detached(0.40) ế:detached(0.42) ắ:detached(0.37) ồ:detached(0.42) ấ:detached(0.37) ầ:detached(0.39) ề:detached(0.44) ằ:detached(0.39)"
-    },
-    {
-     "stack": "Georgia, serif",
-     "style": "w700",
-     "image": "fails/004.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.22) Ế:detached(0.23) Ắ:detached(0.13) Ồ:detached(0.23) Ấ:detached(0.13) Ầ:detached(0.13) Ề:detached(0.25) Ằ:detached(0.13) ố:detached(0.29) ế:detached(0.27) ắ:detached(0.23) ồ:detached(0.29) ấ:detached(0.23) ầ:detached(0.25) ề:detached(0.29) ằ:detached(0.25)"
-    },
-    {
-     "stack": "Georgia, serif",
-     "style": "i400",
-     "image": "fails/005.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.38) Ế:detached(0.32) Ắ:detached(0.39) Ồ:detached(0.41) Ấ:detached(0.39) Ầ:detached(0.40) Ề:detached(0.35) Ằ:detached(0.40) ố:detached(0.60) ế:detached(0.57) ắ:detached(0.52) ồ:detached(0.65) ấ:detached(0.52) ầ:detached(0.57) ề:detached(0.62) ằ:detached(0.57)"
-    }
-   ]
+   "failures": []
   },
   {
    "id": "a8881761-23dc-4cb7-ac6e-11aa29aa6df7",
@@ -870,41 +820,16 @@
    "name": "Speaker Intro Card",
    "category": "lower-thirds",
    "sourceFile": "openchatcut-templates.json",
-   "status": "fail_stacked_marks",
-   "stack_ok": false,
-   "failed_families": [
-    "circumflex",
-    "breve"
-   ],
+   "status": "ok",
+   "stack_ok": true,
+   "failed_families": [],
    "decorative_failed_families": [],
    "stacks": [
     "(inherited default)",
     "\"Cormorant Garamond\", \"Times New Roman\", serif",
     "\"Cormorant Garamond\", \"Georgia\", serif"
    ],
-   "failures": [
-    {
-     "stack": "\"Cormorant Garamond\", \"Georgia\", serif",
-     "style": "w400",
-     "image": "fails/006.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.28) Ế:detached(0.30) Ắ:detached(0.16) Ồ:detached(0.30) Ấ:detached(0.16) Ầ:detached(0.19) Ề:detached(0.32) Ằ:detached(0.19) ố:detached(0.40) ế:detached(0.42) ắ:detached(0.37) ồ:detached(0.42) ấ:detached(0.37) ầ:detached(0.39) ề:detached(0.44) ằ:detached(0.39)"
-    },
-    {
-     "stack": "\"Cormorant Garamond\", \"Georgia\", serif",
-     "style": "w700",
-     "image": "fails/007.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.22) Ế:detached(0.23) Ắ:detached(0.13) Ồ:detached(0.23) Ấ:detached(0.13) Ầ:detached(0.13) Ề:detached(0.25) Ằ:detached(0.13) ố:detached(0.29) ế:detached(0.27) ắ:detached(0.23) ồ:detached(0.29) ấ:detached(0.23) ầ:detached(0.25) ề:detached(0.29) ằ:detached(0.25)"
-    },
-    {
-     "stack": "\"Cormorant Garamond\", \"Georgia\", serif",
-     "style": "i400",
-     "image": "fails/008.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.38) Ế:detached(0.32) Ắ:detached(0.39) Ồ:detached(0.41) Ấ:detached(0.39) Ầ:detached(0.40) Ề:detached(0.35) Ằ:detached(0.40) ố:detached(0.60) ế:detached(0.57) ắ:detached(0.52) ồ:detached(0.65) ấ:detached(0.52) ầ:detached(0.57) ề:detached(0.62) ằ:detached(0.57)"
-    }
-   ]
+   "failures": []
   },
   {
    "id": "8833541d-1d2a-4281-bec2-9139e3d9c6aa",
@@ -1183,12 +1108,9 @@
    "name": "Gradient Layered Text Page",
    "category": "text-effects",
    "sourceFile": "openchatcut-templates.json",
-   "status": "fail_stacked_marks",
-   "stack_ok": false,
-   "failed_families": [
-    "circumflex",
-    "breve"
-   ],
+   "status": "ok",
+   "stack_ok": true,
+   "failed_families": [],
    "decorative_failed_families": [],
    "stacks": [
     "(inherited default)",
@@ -1197,50 +1119,7 @@
     "\"Oswald\", \"Arial Narrow\", sans-serif",
     "\"Abril Fatface\", \"Georgia\", cursive"
    ],
-   "failures": [
-    {
-     "stack": "\"Playfair Display\", \"Georgia\", serif",
-     "style": "w400",
-     "image": "fails/009.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.28) Ế:detached(0.30) Ắ:detached(0.16) Ồ:detached(0.30) Ấ:detached(0.16) Ầ:detached(0.19) Ề:detached(0.32) Ằ:detached(0.19) ố:detached(0.40) ế:detached(0.42) ắ:detached(0.37) ồ:detached(0.42) ấ:detached(0.37) ầ:detached(0.39) ề:detached(0.44) ằ:detached(0.39)"
-    },
-    {
-     "stack": "\"Playfair Display\", \"Georgia\", serif",
-     "style": "w700",
-     "image": "fails/010.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.22) Ế:detached(0.23) Ắ:detached(0.13) Ồ:detached(0.23) Ấ:detached(0.13) Ầ:detached(0.13) Ề:detached(0.25) Ằ:detached(0.13) ố:detached(0.29) ế:detached(0.27) ắ:detached(0.23) ồ:detached(0.29) ấ:detached(0.23) ầ:detached(0.25) ề:detached(0.29) ằ:detached(0.25)"
-    },
-    {
-     "stack": "\"Playfair Display\", \"Georgia\", serif",
-     "style": "i400",
-     "image": "fails/011.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.38) Ế:detached(0.32) Ắ:detached(0.39) Ồ:detached(0.41) Ấ:detached(0.39) Ầ:detached(0.40) Ề:detached(0.35) Ằ:detached(0.40) ố:detached(0.60) ế:detached(0.57) ắ:detached(0.52) ồ:detached(0.65) ấ:detached(0.52) ầ:detached(0.57) ề:detached(0.62) ằ:detached(0.57)"
-    },
-    {
-     "stack": "\"Abril Fatface\", \"Georgia\", cursive",
-     "style": "w400",
-     "image": "fails/012.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.28) Ế:detached(0.30) Ắ:detached(0.16) Ồ:detached(0.30) Ấ:detached(0.16) Ầ:detached(0.19) Ề:detached(0.32) Ằ:detached(0.19) ố:detached(0.40) ế:detached(0.42) ắ:detached(0.37) ồ:detached(0.42) ấ:detached(0.37) ầ:detached(0.39) ề:detached(0.44) ằ:detached(0.39)"
-    },
-    {
-     "stack": "\"Abril Fatface\", \"Georgia\", cursive",
-     "style": "w700",
-     "image": "fails/013.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.22) Ế:detached(0.23) Ắ:detached(0.13) Ồ:detached(0.23) Ấ:detached(0.13) Ầ:detached(0.13) Ề:detached(0.25) Ằ:detached(0.13) ố:detached(0.29) ế:detached(0.27) ắ:detached(0.23) ồ:detached(0.29) ấ:detached(0.23) ầ:detached(0.25) ề:detached(0.29) ằ:detached(0.25)"
-    },
-    {
-     "stack": "\"Abril Fatface\", \"Georgia\", cursive",
-     "style": "i400",
-     "image": "fails/014.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.38) Ế:detached(0.32) Ắ:detached(0.39) Ồ:detached(0.41) Ấ:detached(0.39) Ầ:detached(0.40) Ề:detached(0.35) Ằ:detached(0.40) ố:detached(0.60) ế:detached(0.57) ắ:detached(0.52) ồ:detached(0.65) ấ:detached(0.52) ầ:detached(0.57) ề:detached(0.62) ằ:detached(0.57)"
-    }
-   ]
+   "failures": []
   },
   {
    "id": "3554d937-05c5-4ffb-835d-aa8db1a48ace",
@@ -1380,13 +1259,10 @@
    "name": "Community Welcome Screen",
    "category": "title-cards",
    "sourceFile": "openchatcut-templates.json",
-   "status": "ok_decorative_only",
+   "status": "ok",
    "stack_ok": true,
    "failed_families": [],
-   "decorative_failed_families": [
-    "circumflex",
-    "breve"
-   ],
+   "decorative_failed_families": [],
    "stacks": [
     "(inherited default)",
     "Inter, -apple-system, BlinkMacSystemFont, sans-serif",
@@ -1394,50 +1270,7 @@
     "\"Oswald\", \"Arial Narrow\", sans-serif",
     "\"Abril Fatface\", \"Georgia\", cursive"
    ],
-   "failures": [
-    {
-     "stack": "\"Playfair Display\", \"Georgia\", serif",
-     "style": "w400",
-     "image": "fails/009.png",
-     "decorative": true,
-     "letters": "Ố:detached(0.28) Ế:detached(0.30) Ắ:detached(0.16) Ồ:detached(0.30) Ấ:detached(0.16) Ầ:detached(0.19) Ề:detached(0.32) Ằ:detached(0.19) ố:detached(0.40) ế:detached(0.42) ắ:detached(0.37) ồ:detached(0.42) ấ:detached(0.37) ầ:detached(0.39) ề:detached(0.44) ằ:detached(0.39)"
-    },
-    {
-     "stack": "\"Playfair Display\", \"Georgia\", serif",
-     "style": "w700",
-     "image": "fails/010.png",
-     "decorative": true,
-     "letters": "Ố:detached(0.22) Ế:detached(0.23) Ắ:detached(0.13) Ồ:detached(0.23) Ấ:detached(0.13) Ầ:detached(0.13) Ề:detached(0.25) Ằ:detached(0.13) ố:detached(0.29) ế:detached(0.27) ắ:detached(0.23) ồ:detached(0.29) ấ:detached(0.23) ầ:detached(0.25) ề:detached(0.29) ằ:detached(0.25)"
-    },
-    {
-     "stack": "\"Playfair Display\", \"Georgia\", serif",
-     "style": "i400",
-     "image": "fails/011.png",
-     "decorative": true,
-     "letters": "Ố:detached(0.38) Ế:detached(0.32) Ắ:detached(0.39) Ồ:detached(0.41) Ấ:detached(0.39) Ầ:detached(0.40) Ề:detached(0.35) Ằ:detached(0.40) ố:detached(0.60) ế:detached(0.57) ắ:detached(0.52) ồ:detached(0.65) ấ:detached(0.52) ầ:detached(0.57) ề:detached(0.62) ằ:detached(0.57)"
-    },
-    {
-     "stack": "\"Abril Fatface\", \"Georgia\", cursive",
-     "style": "w400",
-     "image": "fails/012.png",
-     "decorative": true,
-     "letters": "Ố:detached(0.28) Ế:detached(0.30) Ắ:detached(0.16) Ồ:detached(0.30) Ấ:detached(0.16) Ầ:detached(0.19) Ề:detached(0.32) Ằ:detached(0.19) ố:detached(0.40) ế:detached(0.42) ắ:detached(0.37) ồ:detached(0.42) ấ:detached(0.37) ầ:detached(0.39) ề:detached(0.44) ằ:detached(0.39)"
-    },
-    {
-     "stack": "\"Abril Fatface\", \"Georgia\", cursive",
-     "style": "w700",
-     "image": "fails/013.png",
-     "decorative": true,
-     "letters": "Ố:detached(0.22) Ế:detached(0.23) Ắ:detached(0.13) Ồ:detached(0.23) Ấ:detached(0.13) Ầ:detached(0.13) Ề:detached(0.25) Ằ:detached(0.13) ố:detached(0.29) ế:detached(0.27) ắ:detached(0.23) ồ:detached(0.29) ấ:detached(0.23) ầ:detached(0.25) ề:detached(0.29) ằ:detached(0.25)"
-    },
-    {
-     "stack": "\"Abril Fatface\", \"Georgia\", cursive",
-     "style": "i400",
-     "image": "fails/014.png",
-     "decorative": true,
-     "letters": "Ố:detached(0.38) Ế:detached(0.32) Ắ:detached(0.39) Ồ:detached(0.41) Ấ:detached(0.39) Ầ:detached(0.40) Ề:detached(0.35) Ằ:detached(0.40) ố:detached(0.60) ế:detached(0.57) ắ:detached(0.52) ồ:detached(0.65) ấ:detached(0.52) ầ:detached(0.57) ề:detached(0.62) ằ:detached(0.57)"
-    }
-   ]
+   "failures": []
   },
   {
    "id": "47caa17c-0e24-4447-b549-766163e8efe0",
@@ -1460,41 +1293,16 @@
    "name": "Dial Chapter Card",
    "category": "title-cards",
    "sourceFile": "openchatcut-templates.json",
-   "status": "fail_stacked_marks",
-   "stack_ok": false,
-   "failed_families": [
-    "circumflex",
-    "breve"
-   ],
+   "status": "ok",
+   "stack_ok": true,
+   "failed_families": [],
    "decorative_failed_families": [],
    "stacks": [
     "(inherited default)",
     "Georgia, serif",
     "Arial, sans-serif"
    ],
-   "failures": [
-    {
-     "stack": "Georgia, serif",
-     "style": "w400",
-     "image": "fails/015.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.28) Ế:detached(0.30) Ắ:detached(0.16) Ồ:detached(0.30) Ấ:detached(0.16) Ầ:detached(0.19) Ề:detached(0.32) Ằ:detached(0.19) ố:detached(0.40) ế:detached(0.42) ắ:detached(0.37) ồ:detached(0.42) ấ:detached(0.37) ầ:detached(0.39) ề:detached(0.44) ằ:detached(0.39)"
-    },
-    {
-     "stack": "Georgia, serif",
-     "style": "w700",
-     "image": "fails/016.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.22) Ế:detached(0.23) Ắ:detached(0.13) Ồ:detached(0.23) Ấ:detached(0.13) Ầ:detached(0.13) Ề:detached(0.25) Ằ:detached(0.13) ố:detached(0.29) ế:detached(0.27) ắ:detached(0.23) ồ:detached(0.29) ấ:detached(0.23) ầ:detached(0.25) ề:detached(0.29) ằ:detached(0.25)"
-    },
-    {
-     "stack": "Georgia, serif",
-     "style": "i400",
-     "image": "fails/017.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.38) Ế:detached(0.32) Ắ:detached(0.39) Ồ:detached(0.41) Ấ:detached(0.39) Ầ:detached(0.40) Ề:detached(0.35) Ằ:detached(0.40) ố:detached(0.60) ế:detached(0.57) ắ:detached(0.52) ồ:detached(0.65) ấ:detached(0.52) ầ:detached(0.57) ề:detached(0.62) ằ:detached(0.57)"
-    }
-   ]
+   "failures": []
   },
   {
    "id": "f59761bb-89af-47ae-a79a-bbe0bf1a365c",
@@ -1653,40 +1461,15 @@
    "name": "Paper Chapter Title",
    "category": "title-cards",
    "sourceFile": "openchatcut-templates.json",
-   "status": "fail_stacked_marks",
-   "stack_ok": false,
-   "failed_families": [
-    "circumflex",
-    "breve"
-   ],
+   "status": "ok",
+   "stack_ok": true,
+   "failed_families": [],
    "decorative_failed_families": [],
    "stacks": [
     "(inherited default)",
     "\"Georgia\", \"Times New Roman\", serif"
    ],
-   "failures": [
-    {
-     "stack": "\"Georgia\", \"Times New Roman\", serif",
-     "style": "w400",
-     "image": "fails/000.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.28) Ế:detached(0.30) Ắ:detached(0.16) Ồ:detached(0.30) Ấ:detached(0.16) Ầ:detached(0.19) Ề:detached(0.32) Ằ:detached(0.19) ố:detached(0.40) ế:detached(0.42) ắ:detached(0.37) ồ:detached(0.42) ấ:detached(0.37) ầ:detached(0.39) ề:detached(0.44) ằ:detached(0.39)"
-    },
-    {
-     "stack": "\"Georgia\", \"Times New Roman\", serif",
-     "style": "w700",
-     "image": "fails/001.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.22) Ế:detached(0.23) Ắ:detached(0.13) Ồ:detached(0.23) Ấ:detached(0.13) Ầ:detached(0.13) Ề:detached(0.25) Ằ:detached(0.13) ố:detached(0.29) ế:detached(0.27) ắ:detached(0.23) ồ:detached(0.29) ấ:detached(0.23) ầ:detached(0.25) ề:detached(0.29) ằ:detached(0.25)"
-    },
-    {
-     "stack": "\"Georgia\", \"Times New Roman\", serif",
-     "style": "i400",
-     "image": "fails/002.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.38) Ế:detached(0.32) Ắ:detached(0.39) Ồ:detached(0.41) Ấ:detached(0.39) Ầ:detached(0.40) Ề:detached(0.35) Ằ:detached(0.40) ố:detached(0.60) ế:detached(0.57) ắ:detached(0.52) ồ:detached(0.65) ấ:detached(0.52) ầ:detached(0.57) ề:detached(0.62) ằ:detached(0.57)"
-    }
-   ]
+   "failures": []
   },
   {
    "id": "4dfa6822-7089-4908-a4e5-3e4d5720f2df",
@@ -1755,40 +1538,15 @@
    "name": "Typewriter Chapter Title",
    "category": "title-cards",
    "sourceFile": "openchatcut-templates.json",
-   "status": "fail_stacked_marks",
-   "stack_ok": false,
-   "failed_families": [
-    "circumflex",
-    "breve"
-   ],
+   "status": "ok",
+   "stack_ok": true,
+   "failed_families": [],
    "decorative_failed_families": [],
    "stacks": [
     "(inherited default)",
     "Georgia, Times New Roman, serif"
    ],
-   "failures": [
-    {
-     "stack": "Georgia, Times New Roman, serif",
-     "style": "w400",
-     "image": "fails/018.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.28) Ế:detached(0.30) Ắ:detached(0.16) Ồ:detached(0.30) Ấ:detached(0.16) Ầ:detached(0.19) Ề:detached(0.32) Ằ:detached(0.19) ố:detached(0.40) ế:detached(0.42) ắ:detached(0.37) ồ:detached(0.42) ấ:detached(0.37) ầ:detached(0.39) ề:detached(0.44) ằ:detached(0.39)"
-    },
-    {
-     "stack": "Georgia, Times New Roman, serif",
-     "style": "w700",
-     "image": "fails/019.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.22) Ế:detached(0.23) Ắ:detached(0.13) Ồ:detached(0.23) Ấ:detached(0.13) Ầ:detached(0.13) Ề:detached(0.25) Ằ:detached(0.13) ố:detached(0.29) ế:detached(0.27) ắ:detached(0.23) ồ:detached(0.29) ấ:detached(0.23) ầ:detached(0.25) ề:detached(0.29) ằ:detached(0.25)"
-    },
-    {
-     "stack": "Georgia, Times New Roman, serif",
-     "style": "i400",
-     "image": "fails/020.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.38) Ế:detached(0.32) Ắ:detached(0.39) Ồ:detached(0.41) Ấ:detached(0.39) Ầ:detached(0.40) Ề:detached(0.35) Ằ:detached(0.40) ố:detached(0.60) ế:detached(0.57) ắ:detached(0.52) ồ:detached(0.65) ấ:detached(0.52) ầ:detached(0.57) ề:detached(0.62) ằ:detached(0.57)"
-    }
-   ]
+   "failures": []
   },
   {
    "id": "73711b77-044d-46c6-944b-007e145e9f81",
@@ -2164,32 +1922,52 @@
    "name": "Dark Tech — Chapter Title Card",
    "category": "uncategorized",
    "sourceFile": "openchatcut-templates.json",
-   "status": "ok",
-   "stack_ok": true,
-   "failed_families": [],
+   "status": "fail_stacked_marks",
+   "stack_ok": false,
+   "failed_families": [
+    "circumflex"
+   ],
    "decorative_failed_families": [],
    "stacks": [
     "(inherited default)",
     "'Barlow Condensed', 'Arial Narrow', sans-serif",
     "Inter"
    ],
-   "failures": []
+   "failures": [
+    {
+     "stack": "'Barlow Condensed', 'Arial Narrow', sans-serif",
+     "style": "i400",
+     "image": "fails/000.png",
+     "decorative": false,
+     "letters": "Ấ:detached(0.06)"
+    }
+   ]
   },
   {
    "id": "9f4d7811-0ee5-4b92-b8cb-35e980edf8ac",
    "name": "Dark Tech — Comparison Table",
    "category": "uncategorized",
    "sourceFile": "openchatcut-templates.json",
-   "status": "ok",
-   "stack_ok": true,
-   "failed_families": [],
+   "status": "fail_stacked_marks",
+   "stack_ok": false,
+   "failed_families": [
+    "circumflex"
+   ],
    "decorative_failed_families": [],
    "stacks": [
     "(inherited default)",
     "'Barlow Condensed', sans-serif",
     "'Inter', sans-serif"
    ],
-   "failures": []
+   "failures": [
+    {
+     "stack": "'Barlow Condensed', sans-serif",
+     "style": "i400",
+     "image": "fails/002.png",
+     "decorative": false,
+     "letters": "Ấ:detached(0.06)"
+    }
+   ]
   },
   {
    "id": "f4ed16bb-209c-4f61-89ea-4eb6a6909163",
@@ -2211,31 +1989,51 @@
    "name": "Dark Tech — Price Tier Panel",
    "category": "uncategorized",
    "sourceFile": "openchatcut-templates.json",
-   "status": "ok",
-   "stack_ok": true,
-   "failed_families": [],
+   "status": "fail_stacked_marks",
+   "stack_ok": false,
+   "failed_families": [
+    "circumflex"
+   ],
    "decorative_failed_families": [],
    "stacks": [
     "(inherited default)",
     "'Barlow Condensed', sans-serif"
    ],
-   "failures": []
+   "failures": [
+    {
+     "stack": "'Barlow Condensed', sans-serif",
+     "style": "i400",
+     "image": "fails/001.png",
+     "decorative": false,
+     "letters": "Ấ:detached(0.06)"
+    }
+   ]
   },
   {
    "id": "99e8292a-f939-469e-82c8-3ff5334ae41b",
    "name": "Dark Tech — Spec Sheet",
    "category": "uncategorized",
    "sourceFile": "openchatcut-templates.json",
-   "status": "ok",
-   "stack_ok": true,
-   "failed_families": [],
+   "status": "fail_stacked_marks",
+   "stack_ok": false,
+   "failed_families": [
+    "circumflex"
+   ],
    "decorative_failed_families": [],
    "stacks": [
     "(inherited default)",
     "'Barlow Condensed', sans-serif",
     "'Inter', sans-serif"
    ],
-   "failures": []
+   "failures": [
+    {
+     "stack": "'Barlow Condensed', sans-serif",
+     "style": "i400",
+     "image": "fails/002.png",
+     "decorative": false,
+     "letters": "Ấ:detached(0.06)"
+    }
+   ]
   },
   {
    "id": "dd96bb2f-ec3c-466b-84b6-23c5735339b7",
@@ -2258,41 +2056,16 @@
    "name": "Data visualization animation",
    "category": "uncategorized",
    "sourceFile": "openchatcut-templates.json",
-   "status": "fail_stacked_marks",
-   "stack_ok": false,
-   "failed_families": [
-    "circumflex",
-    "breve"
-   ],
+   "status": "ok",
+   "stack_ok": true,
+   "failed_families": [],
    "decorative_failed_families": [],
    "stacks": [
     "(inherited default)",
     "serif",
     "Georgia, serif"
    ],
-   "failures": [
-    {
-     "stack": "Georgia, serif",
-     "style": "w400",
-     "image": "fails/003.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.28) Ế:detached(0.30) Ắ:detached(0.16) Ồ:detached(0.30) Ấ:detached(0.16) Ầ:detached(0.19) Ề:detached(0.32) Ằ:detached(0.19) ố:detached(0.40) ế:detached(0.42) ắ:detached(0.37) ồ:detached(0.42) ấ:detached(0.37) ầ:detached(0.39) ề:detached(0.44) ằ:detached(0.39)"
-    },
-    {
-     "stack": "Georgia, serif",
-     "style": "w700",
-     "image": "fails/004.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.22) Ế:detached(0.23) Ắ:detached(0.13) Ồ:detached(0.23) Ấ:detached(0.13) Ầ:detached(0.13) Ề:detached(0.25) Ằ:detached(0.13) ố:detached(0.29) ế:detached(0.27) ắ:detached(0.23) ồ:detached(0.29) ấ:detached(0.23) ầ:detached(0.25) ề:detached(0.29) ằ:detached(0.25)"
-    },
-    {
-     "stack": "Georgia, serif",
-     "style": "i400",
-     "image": "fails/005.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.38) Ế:detached(0.32) Ắ:detached(0.39) Ồ:detached(0.41) Ấ:detached(0.39) Ầ:detached(0.40) Ề:detached(0.35) Ằ:detached(0.40) ố:detached(0.60) ế:detached(0.57) ắ:detached(0.52) ồ:detached(0.65) ấ:detached(0.52) ầ:detached(0.57) ề:detached(0.62) ằ:detached(0.57)"
-    }
-   ]
+   "failures": []
   },
   {
    "id": "bbab918f-c597-4b24-a39e-db2641ae84d3",
@@ -2669,41 +2442,16 @@
    "name": "MindSpace — Quote Card",
    "category": "uncategorized",
    "sourceFile": "openchatcut-templates.json",
-   "status": "fail_stacked_marks",
-   "stack_ok": false,
-   "failed_families": [
-    "circumflex",
-    "breve"
-   ],
+   "status": "ok",
+   "stack_ok": true,
+   "failed_families": [],
    "decorative_failed_families": [],
    "stacks": [
     "(inherited default)",
     "Georgia, \"Times New Roman\", serif",
     "DM Sans"
    ],
-   "failures": [
-    {
-     "stack": "Georgia, \"Times New Roman\", serif",
-     "style": "w400",
-     "image": "fails/021.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.28) Ế:detached(0.30) Ắ:detached(0.16) Ồ:detached(0.30) Ấ:detached(0.16) Ầ:detached(0.19) Ề:detached(0.32) Ằ:detached(0.19) ố:detached(0.40) ế:detached(0.42) ắ:detached(0.37) ồ:detached(0.42) ấ:detached(0.37) ầ:detached(0.39) ề:detached(0.44) ằ:detached(0.39)"
-    },
-    {
-     "stack": "Georgia, \"Times New Roman\", serif",
-     "style": "w700",
-     "image": "fails/022.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.22) Ế:detached(0.23) Ắ:detached(0.13) Ồ:detached(0.23) Ấ:detached(0.13) Ầ:detached(0.13) Ề:detached(0.25) Ằ:detached(0.13) ố:detached(0.29) ế:detached(0.27) ắ:detached(0.23) ồ:detached(0.29) ấ:detached(0.23) ầ:detached(0.25) ề:detached(0.29) ằ:detached(0.25)"
-    },
-    {
-     "stack": "Georgia, \"Times New Roman\", serif",
-     "style": "i400",
-     "image": "fails/023.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.38) Ế:detached(0.32) Ắ:detached(0.39) Ồ:detached(0.41) Ấ:detached(0.39) Ầ:detached(0.40) Ề:detached(0.35) Ằ:detached(0.40) ố:detached(0.60) ế:detached(0.57) ắ:detached(0.52) ồ:detached(0.65) ấ:detached(0.52) ầ:detached(0.57) ề:detached(0.62) ằ:detached(0.57)"
-    }
-   ]
+   "failures": []
   },
   {
    "id": "630caca9-93c5-459c-bae6-6c0bd0338124",
@@ -3645,40 +3393,15 @@
    "name": "口播·羊皮纸（横）",
    "category": "koubo-scenes",
    "sourceFile": "koubo-scenes-templates.json",
-   "status": "fail_stacked_marks",
-   "stack_ok": false,
-   "failed_families": [
-    "circumflex",
-    "breve"
-   ],
+   "status": "ok",
+   "stack_ok": true,
+   "failed_families": [],
    "decorative_failed_families": [],
    "stacks": [
     "(inherited default)",
     "Georgia, \"Songti SC\", \"STSong\", \"SimSun\", serif"
    ],
-   "failures": [
-    {
-     "stack": "Georgia, \"Songti SC\", \"STSong\", \"SimSun\", serif",
-     "style": "w400",
-     "image": "fails/024.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.28) Ế:detached(0.30) Ắ:detached(0.16) Ồ:detached(0.30) Ấ:detached(0.16) Ầ:detached(0.19) Ề:detached(0.32) Ằ:detached(0.19) ố:detached(0.40) ế:detached(0.42) ắ:detached(0.37) ồ:detached(0.42) ấ:detached(0.37) ầ:detached(0.39) ề:detached(0.44) ằ:detached(0.39)"
-    },
-    {
-     "stack": "Georgia, \"Songti SC\", \"STSong\", \"SimSun\", serif",
-     "style": "w700",
-     "image": "fails/025.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.22) Ế:detached(0.23) Ắ:detached(0.13) Ồ:detached(0.23) Ấ:detached(0.13) Ầ:detached(0.13) Ề:detached(0.25) Ằ:detached(0.13) ố:detached(0.29) ế:detached(0.27) ắ:detached(0.23) ồ:detached(0.29) ấ:detached(0.23) ầ:detached(0.25) ề:detached(0.29) ằ:detached(0.25)"
-    },
-    {
-     "stack": "Georgia, \"Songti SC\", \"STSong\", \"SimSun\", serif",
-     "style": "i400",
-     "image": "fails/026.png",
-     "decorative": false,
-     "letters": "Ố:detached(0.38) Ế:detached(0.32) Ắ:detached(0.39) Ồ:detached(0.41) Ấ:detached(0.39) Ầ:detached(0.40) Ề:detached(0.35) Ằ:detached(0.40) ố:detached(0.60) ế:detached(0.57) ắ:detached(0.52) ồ:detached(0.65) ấ:detached(0.52) ầ:detached(0.57) ề:detached(0.62) ằ:detached(0.57)"
-    }
-   ]
+   "failures": []
   },
   {
    "id": "kb-split-note",
